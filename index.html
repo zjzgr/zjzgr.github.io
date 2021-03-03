@@ -370,12 +370,14 @@
 			},5000)
 
 			// 选择省份
-  		 	$('.province-list .province-item:not(:last)').click(function() {
+  		 	$('.province-list .province-item').click(function() {
   		 		var ind = $(".province-list .province-item").index(this);
   		 		$('.province-list .province-item').removeClass('active');
   		 		$('.province-list .province-item:eq('+ind+')').addClass('active');
-  		 		$("input[name='province']").val($(this).text());
-  		 		$(".province-show").text($(this).text());
+  		 		var provinceText = $(this).text();
+  		 		if(provinceText.indexOf('更多')>=0) provinceText = '更多'
+  		 		$("input[name='province']").val(provinceText);
+  		 		$(".province-show").text(provinceText);
   		 	})
   		})
   	</script>
