@@ -265,6 +265,7 @@
 				<div class="province-item"><span>贵州</span></div>
 				<div class="province-item"><span>西藏</span></div>
 				<div class="province-item"><span>辽宁</span></div>
+				<div class="province-item"><span>更多>></span></div>
 			</div>
 			<form id="timeForm" name="timeForm" onsubmit="return false">
 			  <div class="form-province">
@@ -369,7 +370,7 @@
 			},5000)
 
 			// 选择省份
-  		 	$('.province-list .province-item').click(function() {
+  		 	$('.province-list .province-item:not(:last)').click(function() {
   		 		var ind = $(".province-list .province-item").index(this);
   		 		$('.province-list .province-item').removeClass('active');
   		 		$('.province-list .province-item:eq('+ind+')').addClass('active');
