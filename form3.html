@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>2021年执业药师全国报名考试自助查询系统</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+    	*{
+    		padding:0;
+    		margin:0;
+    	}
+    	.main-content{
+    		margin: 0 auto;
+    		padding-bottom: 20px;
+    	}
+    	.banner{
+    		overflow: hidden;
+    		height: 200px;
+    		background: linear-gradient(to bottom, rgba(0,170,255, 0.55), rgba(0,170,255, 0));
+    	}
+    	.banner h3{
+    		color: #0380bf;
+    	}
+    	.banner .tag{
+    		width: fit-content;
+    		border: 1px solid #4e4b4b;
+    		margin: 0 auto;
+    		padding: 8px 5px;
+    		margin: 20px auto 20px;
+    		color: #4e4b4b;
+    	}
+    	.banner .label-list{
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		pointer-events: none;
+    	}
+    	.banner .checkbox-inline+.checkbox-inline{
+    		margin-left: 45px;
+    	}
+    	.tablist{
+    		display: flex;
+    		margin: 40px 0 20px;
+    	}
+    	.tablist .tab-item{
+    		flex: 1;
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    	}
+    	.tablist .tab-item span{
+    		font-size: 16px;
+    		padding: 0 10px 5px;
+    		border-bottom: 3px solid transparent;
+    	}
+    	.tablist .tab-item span.active{
+    		box-sizing: border-box;
+    		border-bottom: 3px solid rgb(0,170,255);
+    	}
+    	.text-center{
+    		text-align: center;
+    	}
+    	.system-tab-pane h3, .system-tab-pane h5{
+    		color: #504f4f;
+    	}
+    	.system-tab-pane h5{
+    		line-height: 1.5em;
+    	}
+    	.system-time{
+    		padding: 0 15px;
+    	}
+    	.system-tab-pane .radio+.radio{
+    		margin-top: 10px;
+    		margin-left: 0;
+    	}
+    	.system-tab-pane .radio{
+		    margin-right: 10px;
+    	}
+    	.system-tab-pane.active{
+    		display: block;
+    	}
+    	.form-group{
+    		margin-top: 20px;
+    	}
+    	input[type=checkbox], input[type=radio]{
+    		margin: 2px 0 0;
+    	}
+    	.form-group .label-text{
+    		position: relative;
+    		font-size: 18px;
+    		padding-left: 20px;
+    	}
+    	.form-group .label-text::before{
+    		content: '*';
+    		position: absolute;
+    		color: red;
+    		font-size: 18px;
+    		left: 9px;
+    		top: 4px;
+    	}
+    	.form-phone{
+    		display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    	}
+    	.form-province{
+    		display: flex;
+    		justify-content: center;
+    		margin: 0 auto 20px;
+    		height: 25px;
+    	}
+    	.form-province span{
+    		color: #504f4f;
+    		font-size: 14px;
+    	}
+    	.form-province .province-show{
+    		border-bottom: 1px solid #504f4f;
+    		display: inline-block;
+    		width: 80px;
+    		text-align: center;
+    		color: rgb(0,170,255);
+    		font-weight: bold;
+    	}
+    	.form-phone .form-control, .form-province .form-control{
+			width: 250px;
+		}
+		.radio-group {
+			padding: 0 20px; 
+		}
+		.radio-inline {
+			padding-left: 0;
+		}
+		.search-res{
+			display: block;
+			margin: 20px auto 30px;
+		}
+    	.province-list{
+    		display: flex;
+    		flex-wrap: wrap;
+    		margin: 20px 0 30px;
+    	}
+    	.province-list .province-item{
+    		width: 20%;
+    		margin-bottom: 6px;
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    	}
+    	.province-list .province-item span{
+    		color: rgb(0,170,255);
+    		border: 1px solid rgba(0,170,255, 0.3);
+    		width: 60px;
+    		text-align: center;
+    		padding: 5px 0;
+    		border-radius: 5px;
+    	}
+    	.province-list .province-item.active span{
+    		background: rgba(0,170,255, 0.6);
+    		color: #fff;
+    	}
+    </style>
+  </head>
+  <body>
+  	<div class="main-content">
+  		<div class="banner">
+  			<h3 class="text-center">2021年执业药师</h3>
+  			<h3 class="text-center">全国报名考试自助查询系统</h3>
+  			<div class="tag">执业中药师 | 执业西药师</div>
+  			<div class="label-list">
+  				<label class="checkbox-inline">
+				  <input type="checkbox" checked> 高效
+				</label>
+				<label class="checkbox-inline">
+				  <input type="checkbox" checked> 快捷
+				</label>
+				<label class="checkbox-inline">
+				  <input type="checkbox" checked> 方便
+				</label>
+  			</div>		
+  		</div>
+	  	<div class="system-tab-pane system-condition" style="margin-top: 40px">
+		  	<h3 class="text-center">2021年执业药师报考条件</h3>
+			<h5 class="text-center">目前已有<span class="search-num">32753</span>人查询成功</h5>
+			<form id="conditionForm" name="conditionForm" onsubmit="return false">
+				<div class="form-group">
+				    <div class="label-text">1.请选择您报考的项目</div>
+					<div class="radio-group">
+						<div class="radio radio-inline"><label><input type="radio" name="project" value="执业中药师"> 执业中药师</label></div>
+						<div class="radio radio-inline"><label><input type="radio" name="project" value="执业西药师"> 执业西药师</label></div>
+					</div>
+				</div>
+				<div class="form-group">
+				    <div class="label-text">2.请选择您的最高学历</div>
+					<div class="radio-group">
+						<div class="radio radio-inline"><label><input type="radio" name="education" value="大专"> 大专</label></div>
+						<div class="radio radio-inline"><label><input type="radio" name="education" value="本科"> 本科</label></div>
+						<div class="radio radio-inline"><label><input type="radio" name="education" value="硕士/双学位"> 硕士/双学位</label></div>
+						<div class="radio radio-inline"><label><input type="radio" name="education" value="博士"> 博士</label></div>
+					</div>
+				</div>
+				<div class="form-group">
+				    <div class="label-text">3.请选择您所学的专业</div>
+					<div class="radio-group">
+						<div class="radio radio-inline"><label><input type="radio" name="major" value="药学专业"> 药学专业</label></div>
+						<div class="radio radio-inline"><label><input type="radio" name="major" value="中药学专业"> 中药学专业</label></div>
+						<div class="radio radio-inline"><label><input type="radio" name="major" value="医学专业"> 医学专业</label></div>
+						<div class="radio radio-inline"><label><input type="radio" name="major" value="护理专业"> 护理专业</label></div>
+						<div class="radio radio-inline"><label><input type="radio" name="major" value="制药专业"> 制药专业</label></div>
+						<div class="radio radio-inline"><label><input type="radio" name="major" value="医药相关专业"> 医药相关专业</label></div>
+					</div>
+				</div>
+				<div class="form-group">
+				    <div class="label-text">4.请选择您的毕业年限</div>
+					<div class="radio-group">
+						<div class="radio radio-inline"><label><input type="radio" name="year" value="应届生毕业生/在校生"> 应届生毕业生/在校生</label></div>
+						<div class="radio radio-inline"><label><input type="radio" name="year" value="1-3年"> 1-3年</label></div>
+						<div class="radio radio-inline"><label><input type="radio" name="year" value="3-5年"> 3-5年</label></div>
+						<div class="radio radio-inline"><label><input type="radio" name="year" value="5年以上"> 5年以上</label></div>
+					</div>
+				</div>
+			    <div class="form-phone">
+			  		<input class="form-control" type="text" name="phone" placeholder="请输入您的手机号">
+			    </div>
+			    <button type="button" class="search-res btn-primary btn btn-default" onclick="submitConditionForm()">查看审核结果 >></button>
+			</form>
+	  	</div>
+		<p class="text-center">*注：系统将以短信的形式发送到您的手机上，请注意查收</p>
+		<p class="text-center">版权所有：北京优学教育咨询有限公司</p>
+  	</div>
+  	<script src="https://cdn.staticfile.org/jquery/1.10.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  	<script>
+  		// 提交查询报名条件表单
+		function submitConditionForm() {
+			if(!$("input[name='project']:checked").val()) return alert('请选择您报考的项目');
+			if(!$("input[name='education']:checked").val()) return alert('请选择您的最高学历');
+			if(!$("input[name='major']:checked").val()) return alert('请选择您所学的专业');
+			if(!$("input[name='year']:checked").val()) return alert('请选择您的毕业年限');
+			if(!$("input[name='phone']").val()) return alert('请输入您的手机号');
+			if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test($("input[name='phone']").val())) return alert('手机号格式不正确');
+			var vals = $('#conditionForm').serializeArray();
+			var res = {};
+			console.log(vals);
+			for(var pa=0;pa<vals.length;pa++){
+				res[vals[pa].name] = vals[pa].value
+			}
+			//TODO: 查询报名条件类型
+			res.type = 'condition';
+			console.log(res);
+			$.ajax({
+	            type: "get",
+	            dataType: "json",
+	            contentType: "application/json",
+	            // TODO: 接口地址
+	            url:'****', 
+	            data: res,
+	            success:function(res){
+	            	alert('您已提交成功，请耐心等待');
+	        	},
+	        	error: function(res){
+	        		alert(res.message||'查询结果出错');
+	        	}
+            });
+		}
+		// 提交查询报名时间表单
+		function submitTimeForm() {
+			if(!$("input[name='province']").val()) return alert('请选择省份');
+			if(!$("input[name='phone1']").val()) return alert('请输入您的手机号');
+			if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test($("input[name='phone1']").val())) return alert('手机号格式不正确');
+			var vals = $('#timeForm').serializeArray();
+			var res = {};
+			for(var pa=0;pa<vals.length;pa++){
+				res[vals[pa].name] = vals[pa].value
+			}
+			res.phone = res.phone1;
+			delete res.phone1;
+			//TODO: 查询报名时间类型
+			res.type = 'time';
+			console.log(res);
+			$.ajax({
+	            type: "get",
+	            dataType: "json",
+	            contentType: "application/json",
+	            // TODO: 接口地址
+	            url:'****', 
+	            data: res,
+	            success:function(res){
+	            	alert('您已提交成功，请耐心等待');
+	        	},
+	        	error: function(res){
+	        		alert(res.message||'查询结果出错');
+	        	}
+            });
+		}
+		$(document).ready(function () {
+			// 固定时间增长查询人数
+			var searchNum = Number($('.search-num').text());
+			var setAddSearchNumInterval = setInterval(function() {
+				searchNum = searchNum+(Math.round(Math.random())==0?1:2);
+				$(".search-num").text(searchNum);
+			},5000)
+
+			// 选择省份
+  		 	$('.province-list .province-item').click(function() {
+  		 		var ind = $(".province-list .province-item").index(this);
+  		 		$('.province-list .province-item').removeClass('active');
+  		 		$('.province-list .province-item:eq('+ind+')').addClass('active');
+  		 		var provinceText = $(this).text();
+  		 		if(provinceText.indexOf('更多')>=0) provinceText = '更多'
+  		 		$("input[name='province']").val(provinceText);
+  		 		$(".province-show").text(provinceText);
+  		 	})
+  		})
+  	</script>
+  </body>
+</html>
