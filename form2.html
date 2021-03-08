@@ -134,7 +134,7 @@
 			width: 250px;
 		}
 		.radio-group {
-			padding: 0 20px; 
+			padding: 0 20px;
 		}
 		.radio-inline {
 			padding-left: 0;
@@ -185,7 +185,7 @@
 				<label class="checkbox-inline">
 				  <input type="checkbox" checked> 方便
 				</label>
-  			</div>		
+  			</div>
   		</div>
   		<div class="tablist">
   			<div class="tab-item text-center"><span class="active" onclick="changeTab('condition')">报考条件</span></div>
@@ -289,102 +289,67 @@
   	</div>
   	<script src="https://cdn.staticfile.org/jquery/1.10.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  	<script>
-  		// 切换报名条件 和 报名时间tab	
-		function changeTab(type) {
-  			if(type=='condition') {
-  				$('.tablist div:first span').addClass('active');
-  				$('.tablist div:last span').removeClass('active');
-  				$('.system-condition').addClass('active');
-  				$('.system-time').removeClass('active');
-  			} else {
-  				$('.tablist div:first span').removeClass('active');
-  				$('.tablist div:last span').addClass('active');
-  				$('.system-condition').removeClass('active');
-  				$('.system-time').addClass('active');
-  			}
-  		}
-  		// 提交查询报名条件表单
-		function submitConditionForm() {
-			if(!$("input[name='project']:checked").val()) return alert('请选择您报考的项目');
-			if(!$("input[name='education']:checked").val()) return alert('请选择您的最高学历');
-			if(!$("input[name='major']:checked").val()) return alert('请选择您所学的专业');
-			if(!$("input[name='year']:checked").val()) return alert('请选择您的毕业年限');
-			if(!$("input[name='phone']").val()) return alert('请输入您的手机号');
-			if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test($("input[name='phone']").val())) return alert('手机号格式不正确');
-			var vals = $('#conditionForm').serializeArray();
-			var res = {};
-			console.log(vals);
-			for(var pa=0;pa<vals.length;pa++){
-				res[vals[pa].name] = vals[pa].value
-			}
-			//TODO: 查询报名条件类型
-			res.type = 'condition';
-			console.log(res);
-			$.ajax({
-	            type: "get",
-	            dataType: "json",
-	            contentType: "application/json",
-	            // TODO: 接口地址
-	            url:'****', 
-	            data: res,
-	            success:function(res){
-	            	alert('您已提交成功，请耐心等待');
-	        	},
-	        	error: function(res){
-	        		alert(res.message||'查询结果出错');
-	        	}
-            });
-		}
-		// 提交查询报名时间表单
-		function submitTimeForm() {
-			if(!$("input[name='province']").val()) return alert('请选择省份');
-			if(!$("input[name='phone1']").val()) return alert('请输入您的手机号');
-			if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test($("input[name='phone1']").val())) return alert('手机号格式不正确');
-			var vals = $('#timeForm').serializeArray();
-			var res = {};
-			for(var pa=0;pa<vals.length;pa++){
-				res[vals[pa].name] = vals[pa].value
-			}
-			res.phone = res.phone1;
-			delete res.phone1;
-			//TODO: 查询报名时间类型
-			res.type = 'time';
-			console.log(res);
-			$.ajax({
-	            type: "get",
-	            dataType: "json",
-	            contentType: "application/json",
-	            // TODO: 接口地址
-	            url:'****', 
-	            data: res,
-	            success:function(res){
-	            	alert('您已提交成功，请耐心等待');
-	        	},
-	        	error: function(res){
-	        		alert(res.message||'查询结果出错');
-	        	}
-            });
-		}
-		$(document).ready(function () {
-			// 固定时间增长查询人数
-			var searchNum = Number($('.search-num').text());
-			var setAddSearchNumInterval = setInterval(function() {
-				searchNum = searchNum+(Math.round(Math.random())==0?1:2);
-				$(".search-num").text(searchNum);
-			},5000)
+    <script src="https://youxuechat.bjmantis.net/chat/js/dist/mantis.min.js?3153#6041a6f774e29b38f8ce584f"></script>
+    <script>
+        function onOk(){
+            alert("您已提交成功，请耐心等待")
+        }
+        function onError(){
+            alert("提交失败请稍后重试")
+        }
+        // 提交查询报名条件表单
+        function submitConditionForm() {
+            if(!$("input[name='project']:checked").val()) return alert('请选择您报考的项目');
+            if(!$("input[name='education']:checked").val()) return alert('请选择您的最高学历');
+            if(!$("input[name='major']:checked").val()) return alert('请选择您所学的专业');
+            if(!$("input[name='year']:checked").val()) return alert('请选择您的毕业年限');
+            if(!$("input[name='phone']").val()) return alert('请输入您的手机号');
+            if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test($("input[name='phone']").val())) return alert('手机号格式不正确');
+            var vals = $('#conditionForm').serializeArray();
+            var res = {};
+            console.log(vals);
+            for(var pa=0;pa<vals.length;pa++){
+                res[vals[pa].name] = vals[pa].value
+            }
+            //TODO: 查询报名条件类型
+            res.type = 'condition';
+            sendPage(res.phone,res.project,res.education,res)
+        }
+        // 提交查询报名时间表单
+        function submitTimeForm() {
+            if(!$("input[name='province']").val()) return alert('请选择省份');
+            if(!$("input[name='phone1']").val()) return alert('请输入您的手机号');
+            if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test($("input[name='phone1']").val())) return alert('手机号格式不正确');
+            var vals = $('#timeForm').serializeArray();
+            var res = {};
+            for(var pa=0;pa<vals.length;pa++){
+                res[vals[pa].name] = vals[pa].value
+            }
+            res.phone = res.phone1;
+            delete res.phone1;
+            //TODO: 查询报名时间类型
+            res.type = 'time';
+            sendPage(res.phone1,res.province,"",res)
+        }
+        $(document).ready(function () {
+            // 固定时间增长查询人数
+            var searchNum = Number($('.search-num').text());
+            var setAddSearchNumInterval = setInterval(function() {
+                searchNum = searchNum+(Math.round(Math.random())==0?1:2);
+                $(".search-num").text(searchNum);
+            },5000)
 
-			// 选择省份
-  		 	$('.province-list .province-item').click(function() {
-  		 		var ind = $(".province-list .province-item").index(this);
-  		 		$('.province-list .province-item').removeClass('active');
-  		 		$('.province-list .province-item:eq('+ind+')').addClass('active');
-  		 		var provinceText = $(this).text();
-  		 		if(provinceText.indexOf('更多')>=0) provinceText = '更多'
-  		 		$("input[name='province']").val(provinceText);
-  		 		$(".province-show").text(provinceText);
-  		 	})
-  		})
-  	</script>
+            // 选择省份
+            $('.province-list .province-item').click(function() {
+                var ind = $(".province-list .province-item").index(this);
+                $('.province-list .province-item').removeClass('active');
+                $('.province-list .province-item:eq('+ind+')').addClass('active');
+                var provinceText = $(this).text();
+                if(provinceText.indexOf('更多')>=0) provinceText = '更多'
+                $("input[name='province']").val(provinceText);
+                $(".province-show").text(provinceText);
+            })
+        })
+    </script>
   </body>
 </html>
