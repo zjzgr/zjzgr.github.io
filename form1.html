@@ -16,25 +16,30 @@
     	}
     	.banner{
     		overflow: hidden;
-    		height: 200px;
-    		background: linear-gradient(to bottom, rgba(0,170,255, 0.55), rgba(0,170,255, 0));
+    		background-image: url('./banner_bg_1.jpeg');
+    		background-repeat: no-repeat;
+	        background-size: cover;
+	        padding-bottom: 20px;
     	}
     	.banner h3{
-    		color: #0380bf;
+    		color: #3e5d86;
     	}
     	.banner .tag{
     		width: fit-content;
-    		border: 1px solid #4e4b4b;
+    		border: 1px solid #3e5d86;
     		margin: 0 auto;
     		padding: 8px 5px;
     		margin: 20px auto 20px;
-    		color: #4e4b4b;
+    		color: #3e5d86;
     	}
     	.banner .label-list{
     		display: flex;
     		justify-content: center;
     		align-items: center;
     		pointer-events: none;
+    	}
+    	.banner .checkbox-inline{
+    		color: #000;
     	}
     	.banner .checkbox-inline+.checkbox-inline{
     		margin-left: 45px;
@@ -126,7 +131,7 @@
 			width: 250px;
 		}
 		.radio-group {
-			padding: 0 20px; 
+			padding: 0 20px;
 		}
 		.radio-inline {
 			padding-left: 0;
@@ -177,7 +182,7 @@
 				<label class="checkbox-inline">
 				  <input type="checkbox" checked> 方便
 				</label>
-  			</div>		
+  			</div>
   		</div>
 	  	<div class="system-tab-pane system-condition" style="margin-top: 40px">
 		  	<h3 class="text-center">2021年执业药师报考条件</h3>
@@ -278,7 +283,14 @@
   	</div>
   	<script src="https://cdn.staticfile.org/jquery/1.10.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  	<script>
+	<script src="https://youxuechat.bjmantis.net/chat/js/dist/mantis.min.js?3153#6041a6f774e29b38f8ce584f"></script>
+	<script>
+		function onOk(){
+			alert("您已提交成功，请耐心等待")
+		}
+		function onError(){
+			alert("提交失败请稍后重试")
+		}
   		// 提交查询报名条件表单
 		function submitConditionForm() {
 			if(!$("input[name='project']:checked").val()) return alert('请选择您报考的项目');
@@ -295,21 +307,7 @@
 			}
 			//TODO: 查询报名条件类型
 			res.type = 'condition';
-			console.log(res);
-			$.ajax({
-	            type: "get",
-	            dataType: "json",
-	            contentType: "application/json",
-	            // TODO: 接口地址
-	            url:'****', 
-	            data: res,
-	            success:function(res){
-	            	alert('您已提交成功，请耐心等待');
-	        	},
-	        	error: function(res){
-	        		alert(res.message||'查询结果出错');
-	        	}
-            });
+			sendPage(res.phone,res.project,res.education,res)
 		}
 		// 提交查询报名时间表单
 		function submitTimeForm() {
@@ -325,21 +323,7 @@
 			delete res.phone1;
 			//TODO: 查询报名时间类型
 			res.type = 'time';
-			console.log(res);
-			$.ajax({
-	            type: "get",
-	            dataType: "json",
-	            contentType: "application/json",
-	            // TODO: 接口地址
-	            url:'****', 
-	            data: res,
-	            success:function(res){
-	            	alert('您已提交成功，请耐心等待');
-	        	},
-	        	error: function(res){
-	        		alert(res.message||'查询结果出错');
-	        	}
-            });
+			sendPage(res.phone1,res.province,"",res)
 		}
 		$(document).ready(function () {
 			// 固定时间增长查询人数
