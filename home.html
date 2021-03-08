@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>2021年执业药师全国报名考试指导中心</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/Swiper/3.4.2/css/swiper.min.css">
+    <style>
+    	*{
+    		padding:0;
+    		margin:0;
+    	}
+    	.text-center{
+    		text-align: center;
+    	}
+    	.main-content{
+    		margin: 0 auto;
+    	}
+    	.banner{
+    		/*background: linear-gradient(to left, #2791ff, #409EFF);*/
+    		overflow: hidden;
+    		padding: 20px 0 40px;
+	        background-image: url('http://medical-1136844.pic43.websiteonline.cn/upload/777777.jpg');
+	        background-repeat: no-repeat;
+	        background-size: cover;
+    	}
+    	.banner h1{
+    		color: rgb(0, 255, 255);
+    		font-size: 20px;
+    	}
+    	.banner .taglist{
+    		margin-top: 50px;
+    		display: flex;
+    		justify-content: space-around;
+    	}
+    	.banner .taglist .tag{
+    		width: 84px;
+    		padding: 5px 1px;
+    		border: 2px solid #fff;
+    		border-radius: 10px;
+    		color: #fff;
+    		font-weight: bold;
+    	}
+      .king-kong-area{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+      .king-kong-area a{
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin: 10px 10px;
+        color: #fff;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 10px;
+        text-align: center;
+      }
+      .king-kong-area > a:first-child{
+        background: rgb(109, 158, 235);
+      }
+      .king-kong-area >a:nth-child(2){
+        background: rgb(3, 204, 204);
+      }
+      .king-kong-area >a:nth-child(3){
+        background: rgb(147, 196, 125);
+      }
+      .king-kong-area >a:nth-child(4){
+        background: rgb(95, 240, 240);
+      }
+      .king-kong-area >a:nth-child(5){
+        background: #e87676;
+      }
+      .king-kong-area >a:nth-child(6){
+        background: #f0a45f;
+      }
+      .king-kong-area >a:nth-child(7){
+        background: #bf90e8;
+      }
+      .king-kong-area >a:last-child{
+        background: #7f87b1;
+      }
+      .system-tab-pane{
+        padding: 0 15px;
+      }
+      .system-tab-pane .notie{
+        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .system-tab-pane .notie svg{
+        margin-right: 5px;
+      }
+      .system-tab-pane h3, .system-tab-pane h5{
+        color: #504f4f;
+      }
+      .system-tab-pane h5{
+        line-height: 1.5em;
+      }
+      .system-time{
+        /*padding: 0 15px;*/
+      }
+      .system-tab-pane .radio+.radio{
+        margin-top: 10px;
+        margin-left: 0;
+      }
+      .system-tab-pane .radio{
+        margin-right: 10px;
+      }
+      .system-tab-pane.active{
+        display: block;
+      }
+      .form-group{
+        margin-top: 20px;
+      }
+      input[type=checkbox], input[type=radio]{
+        margin: 2px 0 0;
+      }
+      .form-group .label-text{
+        position: relative;
+        font-size: 17px;
+        padding-left: 20px;
+      }
+      .form-group .label-text::before{
+        content: '*';
+        position: absolute;
+        color: red;
+        font-size: 18px;
+        left: 9px;
+        top: 4px;
+      }
+      .form-phone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }   
+      .form-province{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 20px;
+        height: 25px;
+      }
+      .form-province span{
+        color: #504f4f;
+        font-size: 14px;
+      }
+      .form-province .province-show{
+        border-bottom: 1px solid #504f4f;
+        display: inline-block;
+        width: 80px;
+        text-align: center;
+        color: rgb(0,170,255);
+        font-weight: bold;
+      }
+      .form-phone .form-control, .form-province .form-control{
+        width: 250px;
+      }
+      .radio-group {
+        padding: 0 20px; 
+      }
+      .radio-inline {
+        padding-left: 0;
+      }
+      .search-res{
+        display: block;
+        margin: 20px auto 0px;
+      }
+      .system-condition .swiper-container{
+        height: 30px;
+        margin: 15px 0;
+      }
+      .system-condition .swiper-container .swiper-wrapper{
+        /*height: 60px;*/
+      }
+      .system-condition .swiper-container .swiper-wrapper .swiper-slide{
+        /*height: 60px;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .system-condition .swiper-container .swiper-wrapper .swiper-slide svg{
+        margin-right: 3px;
+      }
+      .province-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0 30px;
+      }
+      .province-list .province-item{
+        width: 20%;
+        margin-bottom: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .province-list .province-item span{
+        color: rgb(0,170,255);
+        border: 1px solid rgba(0,170,255, 0.3);
+        width: 60px;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 5px;
+      }
+      .province-list .province-item.active span{
+        background: rgba(0,170,255, 0.6);
+        color: #fff;
+      }
+      .reform-container{
+        background-image: url('http://medical-1136844.pic43.websiteonline.cn/upload/6755gfhgf.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .reform-container{
+        padding: 10px 0;
+      }
+      .reform-container h3{
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .reform-container .content{
+        padding: 0px 10px;
+      }
+      .reform-container .content .item{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+        color: #fff;
+      }
+      .reform-container .content .left{
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #fff;
+        padding: 8px;
+        margin-right: 10px;
+      }
+      .reform-container .content .right{
+        flex: 1;
+      }
+      .reform-container .content .right span{
+        color: #00e9ea;
+        font-weight: bold;
+      }
+      .focus-container{
+        padding: 10px;
+      }
+      .focus-container h3{
+        color: rgb(60, 120, 216);
+        font-size: 20px;
+      }
+      .focus-container .tablist{
+        margin: 20px 0px 10px;
+        display: flex;
+      }
+      .focus-container .tablist .tab-item{
+        flex: 1;
+        width: 50%;
+        color: #6b6565;
+        border-bottom: 2px solid transparent; 
+        padding: 6px 0;
+        font-size: 16px;
+        position: relative;
+      }
+      .focus-container .tablist .tab-item.active{
+        color: #5594f7; 
+      }
+      .focus-container .tablist .tab-item.active:after{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 70%;
+        height: 2px;
+        background: #5594f7; 
+      }
+      .focus-container .focus-tab-pane{
+        display: none;
+      }
+      .focus-container .focus-tab-pane.active{
+        display: block;
+      }
+      .focus-container .focus-tab-pane.one .line{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+      }
+      .focus-container .focus-tab-pane.one .line .img{
+        width: 90px;
+        height: 80%;
+      }
+      .focus-container .focus-tab-pane.one .line .img img{
+        width: 100%;
+        height: 100%;
+      }
+      .focus-container .focus-tab-pane.one .line .name{
+        width: 56px;
+        height: fit-content;
+        background: #5594f7; 
+        color: #fff; 
+        font-size: 13px;
+        padding: 7px 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 6px;
+      }
+      .focus-container .focus-tab-pane.one .line .word{
+        width: 170px;
+        height: fit-content;
+      }
+      .focus-container .focus-tab-pane.one .line .word span{
+        color: #e84444;
+      }
+      .focus-container .focus-tab-pane.two, .focus-container .focus-tab-pane.three{
+        padding: 10px;
+      }
+      .focus-container .focus-tab-pane.two .line{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .focus-container .focus-tab-pane.two .ques{
+        width: 80%;
+        margin-right: 8px;
+        padding: 7px 0;
+      }
+      .focus-container .focus-tab-pane.two svg{
+        vertical-align: middle;
+      }
+      .focus-container .focus-tab-pane.three table td{
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+      }
+      .focus-container .focus-tab-pane.three .notice-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .material-container{
+      	padding: 10px 0px;
+      }
+      .material-container h3{
+      	color: rgb(60, 120, 216);
+      	font-size: 20px;
+      }
+      .material-container .swiper-container{
+      	height: 140px;
+      	position: relative;
+      	margin: 20px auto 20px;
+      }
+      .material-container .swiper-container .swiper-wrapper{
+      	width: 100%;
+      }
+      .material-container .swiper-slide{
+      	width: 100%;
+      	box-sizing: border-box;
+      	display: flex;
+      	padding: 10px 25px 10px 38px;
+      	justify-content: space-between;
+      	box-sizing: border-box;
+      }
+      .material-container .swiper-slide .simg{
+      	width: 100px;	
+      	background: #fff;
+      	margin-right: 10px;
+      	height: 100%;
+      	display: flex;
+      	align-items: center;
+      }
+      .material-container .swiper-slide .simg img{
+      	width: 100px;
+      }
+      .material-container .swiper-slide .right{
+      	flex: 1;
+      	display: flex;
+      	flex-direction: column;
+      	justify-content: space-around;
+      }
+      .material-container .swiper-slide .right div{
+      	text-align: center;
+      }
+      .material-container .swiper-slide .right .title{
+      	color: rgb(60, 120, 216);
+      	font-size: 16px;
+      }
+      .material-container .swiper-slide .right .info{
+      	margin: 4px 0;
+      }
+      .material-container .swiper-container .swiper-button-next, .material-container .swiper-container .swiper-button-prev{
+      	transform: scale(0.5);
+      	-webkit-transform: scale(0.5);
+      }
+      .test-preparation-container {
+      	padding: 10px;
+      }
+      .test-preparation-container h3{
+      	color: rgb(60, 120, 216);
+      	font-size: 20px;
+      }
+      .test-preparation-container > p{
+      	text-align: center;
+      	margin: 10px 0 20px;
+      	font-size: 15px;
+      	color: #525151;
+      }
+      .test-preparation-container .data-list .line{
+      	display: flex;
+      	justify-content: space-between;
+      	align-items: center;
+      	padding: 5px 10px;
+      	border: 1px solid #e2e2e2;
+      	border-radius: 8px;
+      	margin-bottom: 10px;
+      }
+      .test-preparation-container .data-list .line > div{
+      	display: flex;
+      	align-items: center;
+      }
+      .test-preparation-container .data-list .line .left{
+      	width: 80%;
+      	margin-right: 8px;
+      }
+      .test-preparation-container .data-list .line .left svg{
+      	margin-right: 5px;
+      }
+      .test-preparation-container .data-list .line .right svg:last-of-type{
+      	margin-left: 10px;
+      }
+      .video-container {
+      	padding: 10px;
+      }
+      .video-container h3{
+      	color: rgb(60, 120, 216);
+      	font-size: 20px;
+      }
+      .video-container > p{
+      	text-align: center;
+      	margin: 10px 0 20px;
+      	font-size: 15px;
+      	color: #525151;
+      }
+      .video-container .content{
+      	display: flex;
+      }
+      .video-container .content .btn-group-vertical>.btn:first-child:not(:last-child){
+      	border-top-right-radius: 0;
+      }
+      .video-container .content .btn-group-vertical>.btn:last-child:not(:first-child){
+      	border-bottom-right-radius: 0;
+      }
+      .video-container .btn-default:focus, .video-container .btn-default:hover{
+      	outline: none;
+      }
+      .video-container .btn-default:focus, .video-container .btn{
+      	border-right: none;
+      }
+      .video-container .btn-default:focus, .video-container .btn.active{
+      	background-color: rgb(60, 120, 216);
+      	color: #fff;
+      }
+      .video-container .swiper-container{
+      	flex: 1;
+        height: 232px;
+      }
+      .video-container .swiper-container .swiper-slide{
+      	display: flex;
+      	align-items: center;
+      	background: #333;
+      }
+      .video-container .swiper-container .swiper-slide img{
+      	width: 100%;
+      }
+      .video-container .try-listen h5{
+      	font-size: 17px;
+      	margin: 30px 0 20px;
+      }
+      .video-container .try-listen h5 span{
+      	color: #ef9108;
+      }
+      .video-container .try-listen .select-wrap{
+      	display: flex;
+      	align-items: center;
+      	width: 80%;
+      	margin: 0 auto 20px;
+      }
+      .video-container .try-listen .select-wrap span{
+      	width: 70px;
+      	flex-shrink: 0;
+      }
+      .why-container h3{
+		color: rgb(60, 120, 216);
+      	font-size: 20px;
+      	line-height: 30px;
+      }
+      .why-container .step-list{
+      	margin: 30px 0 20px;
+      	padding: 0 18px;
+      	display: flex;
+      	flex-wrap: wrap;
+      	justify-content: space-between;
+      }
+      .why-container .step-list .step-item{
+      	width: 48.5%;
+      	display: flex;
+      	flex-direction: column;
+      	margin-bottom: 15px;
+      }
+      .why-container .step-list .step-item .title{
+      	color: #fff;
+      	font-weight: bold;
+      	padding: 2px 10px;
+      	font-size: 13px;
+      	width: fit-content;
+      	border-top-left-radius: 8px;
+      	border-top-right-radius: 8px;
+      	transform: skewX(-20deg);
+      	-webkit-transform: skewX(-20deg);
+      	transform-origin: 50% 100%;
+      	-webkit-transform-origin: 50% 100%;
+      }
+      .why-container .step-list .step-item:first-child .title{
+      	background: rgb(109, 158, 235);
+      }
+      .why-container .step-list .step-item:nth-child(2) .title{
+      	background: rgb(3, 204, 204);
+      }
+      .why-container .step-list .step-item:nth-child(3) .title{
+      	background: rgb(147, 196, 125);
+      }
+      .why-container .step-list .step-item:nth-child(4) .title{
+      	background: rgb(95, 240, 240);
+      }
+      .why-container .step-list .step-item:nth-child(5) .title{
+      	background: #e87676;
+      }
+      .why-container .step-list .step-item:last-child .title{
+      	background: #f0a45f;
+      }
+      .why-container .step-list .step-item .info{
+      	width: 100%;
+      	border: 1px solid #a9caff;
+      	border-radius: 5px;
+      	border-top-left-radius: 0px;
+      	padding: 8px;
+      	height: 140px;
+      	text-indent: 2em;
+      	color: #616161;
+      }
+      .why-container .step-list .step-item:first-child .info{
+      	border: 1px solid rgb(109, 158, 235);
+      }
+      .why-container .step-list .step-item:nth-child(2) .info{
+      	border: 1px solid rgb(3, 204, 204);
+      }
+      .why-container .step-list .step-item:nth-child(3) .info{
+      	border: 1px solid rgb(147, 196, 125);
+      }
+      .why-container .step-list .step-item:nth-child(4) .info{
+      	border: 1px solid rgb(95, 240, 240);
+      }
+      .why-container .step-list .step-item:nth-child(5) .info{
+      	border: 1px solid #e87676;
+      }
+      .why-container .step-list .step-item:last-child .info{
+      	border: 1px solid #f0a45f;
+      }
+      .modal-backgroud{
+      	position: fixed;
+      	left: 0;
+      	top: 0;
+      	width: 100vw;
+      	height: 100vh;
+      	z-index: 10000;
+      	background: rgba(0,0,0,.75);
+      	display: flex;
+      	align-items: center;
+      	justify-content: center;
+      	display: none;
+      }
+      .modal-backgroud .content{
+      	width: 80%;
+      	background: #fff;
+      	padding: 20px 18px 10px;
+      	border-radius: 6px;
+      	position: relative;
+      }
+      .modal-backgroud .content .glyphicon{
+      	position: absolute;
+      	right: 15px;
+      	top: 15px;
+      	font-size: 16px;
+      }
+      .modal-backgroud .content .title{
+      	color: rgb(60, 120, 216);
+      	font-size: 19px;
+      }
+      .modal-backgroud .content .form{
+      	margin: 20px 0 0;
+      }
+      .modal-backgroud .content .form .line{
+      	display: flex;
+      	align-items: center;
+      	margin-bottom: 15px;
+      	justify-content: center;
+      }
+      .modal-backgroud .content .form .line span{
+      	width: 45px;
+      	flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+  	<div class="main-content">
+  		<div class="banner">
+  			<h1 class="text-center">2021年执业药师全国报名考试指导中心</h1>
+  			<div class="taglist">
+  				<div class="tag text-center">升职加薪</div>
+  				<div class="tag text-center">含金量增加</div>
+  				<div class="tag text-center">开药店必备</div>
+  			</div>
+  		</div>
+      <div class="king-kong-area">
+        <a href="#reform-container" class="king-kong-item">政策改革</a>
+        <a href="#system-condition" class="king-kong-item">报考条件</a>
+        <a href="#system-time" class="king-kong-item">报考时间</a>
+        <a class="king-kong-item" href="javascript: void(0);" onclick="showRgisterForm()">报考入口</a>
+        <a class="king-kong-item" href="javascript: void(0);" onclick="showRgisterForm()">报考流程</a>
+        <a href="#focus-container" class="focus-container">考试时间</a>
+        <a class="king-kong-item" href="javascript: void(0);" onclick="showRgisterForm()">考试科目</a>
+        <a href="#test-preparation-container" class="king-kong-item">真题试题</a>
+      </div>
+      <div class="system-tab-pane system-condition" name="system-condition" id="system-condition" style="margin-top: 40px">
+        <h3 class="text-center">2021年执业药师报考条件</h3>
+        <div class="notie">
+        <svg t="1615193357249" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1058" width="18" height="18"><path d="M919.3 551.7H757.4c-22.4 0-40.7-18.2-40.7-40.6s18.3-40.6 40.7-40.6h161.9c22.4 0 40.7 18.2 40.7 40.6s-18.3 40.6-40.7 40.6zM902.4 180.6L788 294.8c-15.8 15.8-41.7 15.8-57.6 0-15.9-15.8-15.8-41.6 0-57.4l114.4-114.2c15.8-15.8 41.7-15.8 57.6 0s15.9 41.6 0 57.4zM732.2 731.4c15.8-15.8 41.7-15.8 57.6 0l114.4 114.2c15.8 15.8 15.8 41.6 0 57.4-15.8 15.8-41.7 15.8-57.6 0L732.2 788.8c-15.9-15.8-15.9-41.6 0-57.4zM608.2 112c-4.6 0-9.4 1.2-13.8 3.9L232 344.5H116.5c-28.9 0-52.5 23.6-52.5 52.4v230.3c0 28.8 23.6 52.4 52.5 52.4H232l362.5 228.5c4.4 2.7 9.1 3.9 13.7 3.9 13.7 0 26.3-10.8 26.3-26.2V138.2c0-15.4-12.6-26.2-26.3-26.2zM195.4 598.6c0 8.8-7.2 16-16 16h-40.3c-8.8 0-16-7.2-16-16v-164c0-8.8 7.2-16 16-16h40.3c8.8 0 16 7.2 16 16v164z m368.7 145.3c0 27.5-30.3 44.3-53.7 29.9L279 619.8l-0.4-0.2c-10.6-6.3-17.2-17.8-17.2-30.2V434.7c0-12.4 6.5-23.8 17.2-30.1l0.4-0.3 231.4-154c23.5-14.4 53.7 2.4 53.7 29.9v463.7z" p-id="1059" fill="#df6e5f"></path></svg>
+        注：不满足条件无法参加考试</div>
+        <h5 class="text-center" style="font-weight: bold;">--目前已有<span class="search-num">51632</span>人查询成功--</h5>
+        <form id="conditionForm" name="conditionForm" onsubmit="return false">
+          <div class="form-group">
+              <div class="label-text">1.请选择您报考的项目</div>
+            <div class="radio-group">
+              <div class="radio radio-inline"><label><input type="radio" name="project" value="执业中药师"> 执业中药师</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="project" value="执业西药师"> 执业西药师</label></div>
+            </div>
+          </div>
+          <div class="form-group">
+              <div class="label-text">2.请选择您的最高学历</div>
+            <div class="radio-group">
+              <div class="radio radio-inline"><label><input type="radio" name="education" value="大专"> 大专</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="education" value="本科"> 本科</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="education" value="硕士/双学位"> 硕士/双学位</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="education" value="博士"> 博士</label></div>
+            </div>
+          </div>
+          <div class="form-group">
+              <div class="label-text">3.请选择您所学的专业</div>
+            <div class="radio-group">
+              <div class="radio radio-inline"><label><input type="radio" name="major" value="药学专业"> 药学专业</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="major" value="中药学专业"> 中药学专业</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="major" value="医学专业"> 医学专业</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="major" value="护理专业"> 护理专业</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="major" value="制药专业"> 制药专业</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="major" value="医药相关专业"> 医药相关专业</label></div>
+            </div>
+          </div>
+          <div class="form-group">
+              <div class="label-text">4.请选择您的毕业年限</div>
+            <div class="radio-group">
+              <div class="radio radio-inline"><label><input type="radio" name="year" value="应届生毕业生/在校生"> 应届生毕业生/在校生</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="year" value="1-3年"> 1-3年</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="year" value="3-5年"> 3-5年</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="year" value="5年以上"> 5年以上</label></div>
+            </div>
+          </div>
+            <div class="form-phone">
+              <input class="form-control" type="text" name="phone" placeholder="请输入您的手机号">
+            </div>
+            <button type="button" class="search-res btn-primary btn btn-default" onclick="submitConditionForm()">查看审核结果 >></button>
+        </form>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <svg t="1615193357249" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1058" width="18" height="18"><path d="M919.3 551.7H757.4c-22.4 0-40.7-18.2-40.7-40.6s18.3-40.6 40.7-40.6h161.9c22.4 0 40.7 18.2 40.7 40.6s-18.3 40.6-40.7 40.6zM902.4 180.6L788 294.8c-15.8 15.8-41.7 15.8-57.6 0-15.9-15.8-15.8-41.6 0-57.4l114.4-114.2c15.8-15.8 41.7-15.8 57.6 0s15.9 41.6 0 57.4zM732.2 731.4c15.8-15.8 41.7-15.8 57.6 0l114.4 114.2c15.8 15.8 15.8 41.6 0 57.4-15.8 15.8-41.7 15.8-57.6 0L732.2 788.8c-15.9-15.8-15.9-41.6 0-57.4zM608.2 112c-4.6 0-9.4 1.2-13.8 3.9L232 344.5H116.5c-28.9 0-52.5 23.6-52.5 52.4v230.3c0 28.8 23.6 52.4 52.5 52.4H232l362.5 228.5c4.4 2.7 9.1 3.9 13.7 3.9 13.7 0 26.3-10.8 26.3-26.2V138.2c0-15.4-12.6-26.2-26.3-26.2zM195.4 598.6c0 8.8-7.2 16-16 16h-40.3c-8.8 0-16-7.2-16-16v-164c0-8.8 7.2-16 16-16h40.3c8.8 0 16 7.2 16 16v164z m368.7 145.3c0 27.5-30.3 44.3-53.7 29.9L279 619.8l-0.4-0.2c-10.6-6.3-17.2-17.8-17.2-30.2V434.7c0-12.4 6.5-23.8 17.2-30.1l0.4-0.3 231.4-154c23.5-14.4 53.7 2.4 53.7 29.9v463.7z" p-id="1059" fill="#df6e5f"></path></svg>
+              <span>133*****8103用户 15分钟前测试满足条件</span>
+            </div>
+            <div class="swiper-slide">
+              <svg t="1615193357249" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1058" width="18" height="18"><path d="M919.3 551.7H757.4c-22.4 0-40.7-18.2-40.7-40.6s18.3-40.6 40.7-40.6h161.9c22.4 0 40.7 18.2 40.7 40.6s-18.3 40.6-40.7 40.6zM902.4 180.6L788 294.8c-15.8 15.8-41.7 15.8-57.6 0-15.9-15.8-15.8-41.6 0-57.4l114.4-114.2c15.8-15.8 41.7-15.8 57.6 0s15.9 41.6 0 57.4zM732.2 731.4c15.8-15.8 41.7-15.8 57.6 0l114.4 114.2c15.8 15.8 15.8 41.6 0 57.4-15.8 15.8-41.7 15.8-57.6 0L732.2 788.8c-15.9-15.8-15.9-41.6 0-57.4zM608.2 112c-4.6 0-9.4 1.2-13.8 3.9L232 344.5H116.5c-28.9 0-52.5 23.6-52.5 52.4v230.3c0 28.8 23.6 52.4 52.5 52.4H232l362.5 228.5c4.4 2.7 9.1 3.9 13.7 3.9 13.7 0 26.3-10.8 26.3-26.2V138.2c0-15.4-12.6-26.2-26.3-26.2zM195.4 598.6c0 8.8-7.2 16-16 16h-40.3c-8.8 0-16-7.2-16-16v-164c0-8.8 7.2-16 16-16h40.3c8.8 0 16 7.2 16 16v164z m368.7 145.3c0 27.5-30.3 44.3-53.7 29.9L279 619.8l-0.4-0.2c-10.6-6.3-17.2-17.8-17.2-30.2V434.7c0-12.4 6.5-23.8 17.2-30.1l0.4-0.3 231.4-154c23.5-14.4 53.7 2.4 53.7 29.9v463.7z" p-id="1059" fill="#df6e5f"></path></svg>
+              <span>185*****0247用户 10分钟前测试满足条件</span>
+            </div>
+            <div class="swiper-slide">
+              <svg t="1615193357249" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1058" width="18" height="18"><path d="M919.3 551.7H757.4c-22.4 0-40.7-18.2-40.7-40.6s18.3-40.6 40.7-40.6h161.9c22.4 0 40.7 18.2 40.7 40.6s-18.3 40.6-40.7 40.6zM902.4 180.6L788 294.8c-15.8 15.8-41.7 15.8-57.6 0-15.9-15.8-15.8-41.6 0-57.4l114.4-114.2c15.8-15.8 41.7-15.8 57.6 0s15.9 41.6 0 57.4zM732.2 731.4c15.8-15.8 41.7-15.8 57.6 0l114.4 114.2c15.8 15.8 15.8 41.6 0 57.4-15.8 15.8-41.7 15.8-57.6 0L732.2 788.8c-15.9-15.8-15.9-41.6 0-57.4zM608.2 112c-4.6 0-9.4 1.2-13.8 3.9L232 344.5H116.5c-28.9 0-52.5 23.6-52.5 52.4v230.3c0 28.8 23.6 52.4 52.5 52.4H232l362.5 228.5c4.4 2.7 9.1 3.9 13.7 3.9 13.7 0 26.3-10.8 26.3-26.2V138.2c0-15.4-12.6-26.2-26.3-26.2zM195.4 598.6c0 8.8-7.2 16-16 16h-40.3c-8.8 0-16-7.2-16-16v-164c0-8.8 7.2-16 16-16h40.3c8.8 0 16 7.2 16 16v164z m368.7 145.3c0 27.5-30.3 44.3-53.7 29.9L279 619.8l-0.4-0.2c-10.6-6.3-17.2-17.8-17.2-30.2V434.7c0-12.4 6.5-23.8 17.2-30.1l0.4-0.3 231.4-154c23.5-14.4 53.7 2.4 53.7 29.9v463.7z" p-id="1059" fill="#df6e5f"></path></svg>
+              <span>130*****3136用户 5分钟前测试不满足条件</span>
+            </div>
+            <div class="swiper-slide">
+              <svg t="1615193357249" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1058" width="18" height="18"><path d="M919.3 551.7H757.4c-22.4 0-40.7-18.2-40.7-40.6s18.3-40.6 40.7-40.6h161.9c22.4 0 40.7 18.2 40.7 40.6s-18.3 40.6-40.7 40.6zM902.4 180.6L788 294.8c-15.8 15.8-41.7 15.8-57.6 0-15.9-15.8-15.8-41.6 0-57.4l114.4-114.2c15.8-15.8 41.7-15.8 57.6 0s15.9 41.6 0 57.4zM732.2 731.4c15.8-15.8 41.7-15.8 57.6 0l114.4 114.2c15.8 15.8 15.8 41.6 0 57.4-15.8 15.8-41.7 15.8-57.6 0L732.2 788.8c-15.9-15.8-15.9-41.6 0-57.4zM608.2 112c-4.6 0-9.4 1.2-13.8 3.9L232 344.5H116.5c-28.9 0-52.5 23.6-52.5 52.4v230.3c0 28.8 23.6 52.4 52.5 52.4H232l362.5 228.5c4.4 2.7 9.1 3.9 13.7 3.9 13.7 0 26.3-10.8 26.3-26.2V138.2c0-15.4-12.6-26.2-26.3-26.2zM195.4 598.6c0 8.8-7.2 16-16 16h-40.3c-8.8 0-16-7.2-16-16v-164c0-8.8 7.2-16 16-16h40.3c8.8 0 16 7.2 16 16v164z m368.7 145.3c0 27.5-30.3 44.3-53.7 29.9L279 619.8l-0.4-0.2c-10.6-6.3-17.2-17.8-17.2-30.2V434.7c0-12.4 6.5-23.8 17.2-30.1l0.4-0.3 231.4-154c23.5-14.4 53.7 2.4 53.7 29.9v463.7z" p-id="1059" fill="#df6e5f"></path></svg>
+              <span>180*****6163用户 3分钟前测试满足条件</span>
+            </div>
+            <div class="swiper-slide">
+              <svg t="1615193357249" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1058" width="18" height="18"><path d="M919.3 551.7H757.4c-22.4 0-40.7-18.2-40.7-40.6s18.3-40.6 40.7-40.6h161.9c22.4 0 40.7 18.2 40.7 40.6s-18.3 40.6-40.7 40.6zM902.4 180.6L788 294.8c-15.8 15.8-41.7 15.8-57.6 0-15.9-15.8-15.8-41.6 0-57.4l114.4-114.2c15.8-15.8 41.7-15.8 57.6 0s15.9 41.6 0 57.4zM732.2 731.4c15.8-15.8 41.7-15.8 57.6 0l114.4 114.2c15.8 15.8 15.8 41.6 0 57.4-15.8 15.8-41.7 15.8-57.6 0L732.2 788.8c-15.9-15.8-15.9-41.6 0-57.4zM608.2 112c-4.6 0-9.4 1.2-13.8 3.9L232 344.5H116.5c-28.9 0-52.5 23.6-52.5 52.4v230.3c0 28.8 23.6 52.4 52.5 52.4H232l362.5 228.5c4.4 2.7 9.1 3.9 13.7 3.9 13.7 0 26.3-10.8 26.3-26.2V138.2c0-15.4-12.6-26.2-26.3-26.2zM195.4 598.6c0 8.8-7.2 16-16 16h-40.3c-8.8 0-16-7.2-16-16v-164c0-8.8 7.2-16 16-16h40.3c8.8 0 16 7.2 16 16v164z m368.7 145.3c0 27.5-30.3 44.3-53.7 29.9L279 619.8l-0.4-0.2c-10.6-6.3-17.2-17.8-17.2-30.2V434.7c0-12.4 6.5-23.8 17.2-30.1l0.4-0.3 231.4-154c23.5-14.4 53.7 2.4 53.7 29.9v463.7z" p-id="1059" fill="#df6e5f"></path></svg>
+              <span>150*****5279用户 1分钟前测试不满足条件</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-center" style="margin-bottom: 30px">*注：查询结果以短信形式发送至您的手机上，请注意查收</p>
+      </div>
+      <div class="system-tab-pane system-time" name='system-time' id='system-time'>
+        <h3 class="text-center">2021执业药师报名时间已公布</h3>
+        <h5 class="text-center">各个省份的报名时间均不同，考生需根据所在省份进行报名,切勿错过报名时间,错过就要等一年</h5>
+        <div class="province-list">
+          <div class="province-item"><span>北京</span></div>
+          <div class="province-item"><span>上海</span></div>
+          <div class="province-item"><span>重庆</span></div>
+          <div class="province-item"><span>天津</span></div>
+          <div class="province-item"><span>河北</span></div>
+          <div class="province-item"><span>河南</span></div>
+          <div class="province-item"><span>山东</span></div>
+          <div class="province-item"><span>广州</span></div>
+          <div class="province-item"><span>安徽</span></div>
+          <div class="province-item"><span>云南</span></div>
+          <div class="province-item"><span>江苏</span></div>
+          <div class="province-item"><span>四川</span></div>
+          <div class="province-item"><span>浙江</span></div>
+          <div class="province-item"><span>湖北</span></div>
+          <div class="province-item"><span>黑龙江</span></div>
+          <div class="province-item"><span>江西</span></div>
+          <div class="province-item"><span>湖南</span></div>
+          <div class="province-item"><span>山西</span></div>
+          <div class="province-item"><span>陕西</span></div>
+          <div class="province-item"><span>内蒙古</span></div>
+          <div class="province-item"><span>吉林</span></div>
+          <div class="province-item"><span>甘肃</span></div>
+          <div class="province-item"><span>海南</span></div>
+          <div class="province-item"><span>青海</span></div>
+          <div class="province-item"><span>福建</span></div>
+          <div class="province-item"><span>广西</span></div>
+          <div class="province-item"><span>贵州</span></div>
+          <div class="province-item"><span>西藏</span></div>
+          <div class="province-item"><span>辽宁</span></div>
+          <div class="province-item"><span>更多>></span></div>
+        </div>
+        <form id="timeForm" name="timeForm" onsubmit="return false">
+          <div class="form-province">
+            <span>已选择省份：&nbsp;</span>
+            <span class="province-show"></span>
+          </div>
+          <div class="form-phone">
+            <input class="form-control hide" type="text" name="province">
+            <input class="form-control" type="text" name="phone1" placeholder="请输入您的手机号">
+          </div>
+<!--           <button type="button" class="search-res btn-primary btn btn-default" onclick="submitTimeForm()">获取报名时间 >></button> -->
+          <button type="button" class="search-res btn-primary btn btn-default" onclick="showRgisterForm()">获取报名时间 >></button>
+        </form>
+        <p class="text-center" style="margin: 15px">*注：查询结果以短信形式发送至您的手机上，请注意查收</p>
+      </div>
+      <div class="reform-container" name="reform-container" id="reform-container">
+        <h3 class="text-center">2021年执业药师政策改革（新）</h3>
+        <div class="content">
+          <div class="item">
+            <div class="left">学历报考改革</div>
+            <div class="right">
+              2021年人事部、国家医药管理局对执业药师报考实施新规：中专学历的考生将...
+              <span onclick="showRgisterForm()">查询详情&gt;&gt;</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="left">考试内容改革</div>
+            <div class="right">
+              2021年执业药师相比去年考试内容更偏向与临床案例，更改了510余处，分别是...
+              <span onclick="showRgisterForm()">查询详情&gt;&gt;</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="left">社保需求改革</div>
+            <div class="right">
+              2021年对执业药师报名考试社保问题进行调整，新增以下几个省份有：四川...
+              <span onclick="showRgisterForm()">查询详情&gt;&gt;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="focus-container" name="focus-container" id="focus-container">
+        <h3 class="text-center">聚焦报考信息，你关心的都在这里</h3>
+        <div class="tablist">
+          <div class="tab-item text-center active">证书前景解读</div>
+          <div class="tab-item text-center">常见问题</div>
+          <div class="tab-item text-center">考试时间及科目</div>
+        </div>
+        <div class="focus-tab-content">
+          <div class="focus-tab-pane one active">
+            <div class="line">
+              <div class="img">
+                <img src="http://medical-1136844.pic43.websiteonline.cn/upload/vbcb76.jpg" />
+              </div>
+              <div class="name">市场前景更广阔</div>
+              <div class="word">随着疫情的突然出现，“互联网+医疗健康”政策的出台，医药健康越来越受重视<span onclick="showRgisterForm()">...查看详情</span></div>
+            </div>
+            <div class="line">
+              <div class="name">多元化就业</div>
+              <div class="word">国家已有文件，号召“多点执业”“远程申方”不用到公司上班，直接<span onclick="showRgisterForm()">...查看详情</span></div>
+              <div class="img">
+                <img src="http://medical-1136844.pic43.websiteonline.cn/upload/vbcb76.jpg" />
+              </div>
+            </div>
+            <div class="line">
+              <div class="img">
+                <img src="http://medical-1136844.pic43.websiteonline.cn/upload/vbcb76.jpg" />
+              </div>
+              <div class="name">行业政策</div>
+              <div class="word">凡从事药品生产、使用的单位均应配备相应的执业药师，开药店至少必须配备<span onclick="showRgisterForm()">...查看详情</span></div>
+            </div>
+            <div class="line">
+              <div class="name">政策补贴</div>
+              <div class="word">1.取得证书后，可在当地人社部一次领取1500元补贴;2.同年可以减免3600元<span onclick="showRgisterForm()">...查看详情</span></div>
+              <div class="img">
+                <img src="http://medical-1136844.pic43.websiteonline.cn/upload/vbcb76.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="focus-tab-pane two">
+            <div class="line">
+              <div class="ques">
+                1.2021年中专学历可以报名执业药师吗？（已回答）
+              </div>
+              <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
+            </div>
+            <div class="line">
+              <div class="ques">
+                2.2021年执业药师需要提供社保的省市有哪些?时间不够怎么办？（已回答）
+                <svg t="1615215942916" class="icon" viewBox="0 0 1609 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8462" width="22" height="22"><path d="M731.428571 292.571429h146.285715v219.428571h-146.285715z" fill="#FF6600" p-id="8463"></path><path d="M0 0v1024l219.428571-219.428571h1389.714286V0H0z m585.142857 585.142857H512V438.857143H292.571429v146.285714H219.428571V219.428571h73.142858v146.285715h219.428571V219.428571h73.142857v365.714286z m365.714286 0H658.285714V219.428571h292.571429v365.714286z m438.857143-292.571428h-146.285715v292.571428h-73.142857V292.571429h-146.285714V219.428571h365.714286v73.142858z" fill="#FF6600" p-id="8464"></path></svg>
+              </div>
+              <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
+            </div>
+            <div class="line">
+              <div class="ques">
+                3.2021年哪些专业不能报考执业药师？（已回答）
+                <svg t="1615215942916" class="icon" viewBox="0 0 1609 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8462" width="22" height="22"><path d="M731.428571 292.571429h146.285715v219.428571h-146.285715z" fill="#FF6600" p-id="8463"></path><path d="M0 0v1024l219.428571-219.428571h1389.714286V0H0z m585.142857 585.142857H512V438.857143H292.571429v146.285714H219.428571V219.428571h73.142858v146.285715h219.428571V219.428571h73.142857v365.714286z m365.714286 0H658.285714V219.428571h292.571429v365.714286z m438.857143-292.571428h-146.285715v292.571428h-73.142857V292.571429h-146.285714V219.428571h365.714286v73.142858z" fill="#FF6600" p-id="8464"></path></svg>
+              </div>
+              <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
+            </div>
+            <div class="line">
+              <div class="ques">
+                4.工作年限具体怎么算？实习年限算吗？（已回答）
+                <svg t="1615215942916" class="icon" viewBox="0 0 1609 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8462" width="22" height="22"><path d="M731.428571 292.571429h146.285715v219.428571h-146.285715z" fill="#FF6600" p-id="8463"></path><path d="M0 0v1024l219.428571-219.428571h1389.714286V0H0z m585.142857 585.142857H512V438.857143H292.571429v146.285714H219.428571V219.428571h73.142858v146.285715h219.428571V219.428571h73.142857v365.714286z m365.714286 0H658.285714V219.428571h292.571429v365.714286z m438.857143-292.571428h-146.285715v292.571428h-73.142857V292.571429h-146.285714V219.428571h365.714286v73.142858z" fill="#FF6600" p-id="8464"></path></svg>
+              </div>
+              <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
+            </div>
+            <div class="line">
+              <div class="ques">5.药剂师和执业药师有什么区别？（已回答）</div>
+              <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
+            </div>
+            <div class="line">
+              <div class="ques">
+                6.2021年执业药师免试条件是什么？（已回答）
+                <svg t="1615215942916" class="icon" viewBox="0 0 1609 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8462" width="22" height="22"><path d="M731.428571 292.571429h146.285715v219.428571h-146.285715z" fill="#FF6600" p-id="8463"></path><path d="M0 0v1024l219.428571-219.428571h1389.714286V0H0z m585.142857 585.142857H512V438.857143H292.571429v146.285714H219.428571V219.428571h73.142858v146.285715h219.428571V219.428571h73.142857v365.714286z m365.714286 0H658.285714V219.428571h292.571429v365.714286z m438.857143-292.571428h-146.285715v292.571428h-73.142857V292.571429h-146.285714V219.428571h365.714286v73.142858z" fill="#FF6600" p-id="8464"></path></svg>
+              </div>
+              <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
+            </div>
+            <div class="line">
+              <div class="ques">7.2021年执业药师的报考流程是什么？需要注意哪些？（已回答）</div>
+              <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
+            </div>
+          </div>
+          <div class="focus-tab-pane three">
+            <table class="table table-striped table-bordered">
+              <tr>
+                <td>考试科目</td>
+                <td>考试时间</td>
+                <td>满分</td>
+                <td>题型题量</td>
+                <td>报考入口</td>
+              </tr>
+              <tr>
+                <td>药学/中药学专业知识（一）</td>
+                <td>9：00-11:30</td>
+                <td>120分</td>
+                <td>
+                  <button type="button" class="btn btn-info btn-xs" onclick="showRgisterForm()">点击查看</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-warning btn-xs" onclick="showRgisterForm()">点击查看</button>
+                </td>
+              </tr>
+              <tr>
+                <td>药学/中药学专业知识（二）</td>
+                <td>14：00-16：30</td>
+                <td>120分</td>
+                <td>
+                  <button type="button" class="btn btn-info btn-xs" onclick="showRgisterForm()">点击查看</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-warning btn-xs" onclick="showRgisterForm()">点击查看</button>
+                </td>
+              </tr>
+              <tr>
+                <td>药事管理与法规</td>
+                <td>9：00-11:30</td>
+                <td>120分</td>
+                <td>
+                  <button type="button" class="btn btn-info btn-xs" onclick="showRgisterForm()">点击查看</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-warning btn-xs" onclick="showRgisterForm()">点击查看</button>
+                </td>
+              </tr>
+              <tr>
+                <td>综合知识技</td>
+                <td>14：00-16：30</td>
+                <td>120分</td>
+                <td>
+                  <button type="button" class="btn btn-info btn-xs" onclick="showRgisterForm()">点击查看</button>
+                </td>
+                <td>  
+                  <button type="button" class="btn btn-warning btn-xs" onclick="showRgisterForm()">点击查看</button>
+                </td>
+              </tr>
+            </table>
+            <div class="notice-wrap">
+              <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">查看考试时间</button>
+              <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">了解历年通过率和易错点</button>
+            </div>
+            <p style="margin: 15px 0px 10px">*温馨提示：考试成绩是连续4年一个周期，考生须在连续的4年内通过所有考试，方可获取证书</p>
+          </div>
+        </div>
+      </div>
+      <div class="material-container">
+        <h3 class="text-center">2021执业药师教材已出版（新）</h3>
+        <div class="swiper-container">
+        	<div class="swiper-wrapper">
+        		<div class="swiper-slide">
+        			<div class="simg">
+        				<img src="./images/data1.jpeg" />
+        			</div>
+        			<div class="right">
+        				<div class="title">《药学专业知识一》</div>
+        				<div class="info">全国执业药师资格考试用书</div>
+        				<div class="info">早领教材早备考</div>
+			            <div class="notice-wrap">
+			              <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+			              <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+			            </div>
+        			</div>
+        		</div>
+        		<div class="swiper-slide">
+        			<div class="simg">
+        				<img src="./images/data2.jpeg" />
+        			</div>
+        			<div class="right">
+        				<div class="title">《药学专业知识二》</div>
+        				<div class="info">全国执业药师资格考试用书</div>
+        				<div class="info">早领教材早备考</div>
+			            <div class="notice-wrap">
+			              <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+			              <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+			            </div>
+        			</div>
+        		</div>
+        		<div class="swiper-slide">
+        			<div class="simg">
+        				<img src="./images/data3.jpg" />
+        			</div>
+        			<div class="right">
+        				<div class="title">《药学综合知识》</div>
+        				<div class="info">全国执业药师资格考试用书</div>
+        				<div class="info">早领教材早备考</div>
+			            <div class="notice-wrap">
+			              <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+			              <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+			            </div>
+        			</div>
+        		</div>
+        		<div class="swiper-slide">
+        			<div class="simg">
+        				<img src="./images/data4.jpeg" />
+        			</div>
+        			<div class="right">
+        				<div class="title">《中药学专业知识一》</div>
+        				<div class="info">全国执业药师资格考试用书</div>
+        				<div class="info">早领教材早备考</div>
+			            <div class="notice-wrap">
+			              <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+			              <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+			            </div>
+        			</div>
+        		</div>
+        		<div class="swiper-slide">
+        			<div class="simg">
+        				<img src="./images/data5.jpeg" />
+        			</div>
+        			<div class="right">
+        				<div class="title">《中药学专业知识二》</div>
+        				<div class="info">全国执业药师资格考试用书</div>
+        				<div class="info">早领教材早备考</div>
+			            <div class="notice-wrap">
+			              <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+			              <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+			            </div>
+        			</div>
+        		</div>
+        		<div class="swiper-slide">
+        			<div class="simg">
+        				<img src="./images/data6.jpeg" />
+        			</div>
+        			<div class="right">
+        				<div class="title">《中药学综合知识》</div>
+        				<div class="info">全国执业药师资格考试用书</div>
+        				<div class="info">早领教材早备考</div>
+			            <div class="notice-wrap">
+			              <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+			              <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+			            </div>
+        			</div>
+        		</div>
+        		<div class="swiper-slide">
+        			<div class="simg">
+        				<img src="./images/data7.jpeg" />
+        			</div>
+        			<div class="right">
+        				<div class="title">《药事管理》</div>
+        				<div class="info">全国执业药师资格考试用书</div>
+        				<div class="info">早领教材早备考</div>
+			            <div class="notice-wrap">
+			              <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+			              <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+			            </div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="swiper-button-prev"></div>
+    		<div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="test-preparation-container" name="test-preparation-container" id="test-preparation-container">
+      	<h3 class="text-center">备考神器，精选资料免费领</h3>
+      	<p>种下一棵树最好的时间是十年前，其次是现在</p>
+      	<div class="data-list">
+      		<div class="line">
+      			<div class="left">
+      			<svg t="1615217014319" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="17522" width="29" height="29"><path d="M846.12608 233.472h-330.83904L427.52 143.36H177.8688A95.8464 95.8464 0 0 0 81.92 238.89408v541.09184A95.8464 95.8464 0 0 0 177.8688 875.52h668.25728A95.85152 95.85152 0 0 0 942.08 779.98592V329.0368A95.85664 95.85664 0 0 0 846.12608 233.472z m-189.14816 359.28064h-109.73696v109.30176a31.7952 31.7952 0 0 1-63.59552 0v-109.27616H373.90848a31.66208 31.66208 0 1 1 0-63.31904h109.73696V420.18816a31.7952 31.7952 0 0 1 63.59552 0v109.27104h109.73696a31.66208 31.66208 0 1 1 0 63.31904z" fill="#5288F5" p-id="17523"></path></svg>
+				2016-2020年《药学一》真题及答案解析（完整版）
+      		</div>
+      		<div class="right">
+				<svg onclick="showRgisterForm()" t="1615216234703" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13122" width="22" height="22"><path d="M315.532045 1021.512475c-68.11633-141.672668-31.803119-222.807819 20.504643-299.270143 57.259564-83.785411 72.068472-166.640906 72.068472-166.640906s45.054419 58.561446 27.014054 150.134901c79.60079-88.597725 94.61893-229.735691 82.57652-283.74055 179.822462 125.724612 256.703249 397.864463 153.13388 599.586442 551.021591-311.77751 137.046337-778.269757 65.047608-830.809998 24.015075 52.516993 28.571662 141.509933-19.900197 184.681272C633.818966 63.861966 430.655618 0 430.655618 0c24.061571 160.64295-87.086612 336.280791-194.212909 467.56165-3.812655-64.047949-7.764797-108.242196-41.474243-169.593389-7.602061 116.425455-96.478761 211.253615-120.540332 327.841806-32.593548 157.969442 24.456785 273.534724 241.173655 395.702408h-0.069744z m0 0" p-id="13123" fill="#f19004"></path></svg>
+      			<svg onclick="showRgisterForm()" t="1615215386726" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5156" width="24" height="24"><path d="M853.333333 938.666667H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333334V469.333333a85.333333 85.333333 0 0 1 85.333334-85.333333h117.333333a32 32 0 0 1 0 64H170.666667a21.333333 21.333333 0 0 0-21.333334 21.333333v384a21.333333 21.333333 0 0 0 21.333334 21.333334h682.666666a21.333333 21.333333 0 0 0 21.333334-21.333334V469.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-117.333333a32 32 0 0 1 0-64H853.333333a85.333333 85.333333 0 0 1 85.333334 85.333333v384a85.333333 85.333333 0 0 1-85.333334 85.333334z" fill="#333333" p-id="5157"></path><path d="M715.029333 543.552a32.810667 32.810667 0 0 0-46.250666 0l-114.773334 114.261333V117.333333a32 32 0 0 0-64 0v539.733334l-114.112-113.578667a32.789333 32.789333 0 0 0-46.229333 0 32.426667 32.426667 0 0 0 0 46.037333l169.557333 168.810667a32.810667 32.810667 0 0 0 46.250667 0l169.557333-168.810667a32.469333 32.469333 0 0 0 0-45.973333z" fill="#FF9C00" p-id="5158"></path></svg>
+      		</div>
+      		</div>
+      		 <div class="line">
+      			<div class="left">
+      			<svg t="1615217014319" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="17522" width="29" height="29"><path d="M846.12608 233.472h-330.83904L427.52 143.36H177.8688A95.8464 95.8464 0 0 0 81.92 238.89408v541.09184A95.8464 95.8464 0 0 0 177.8688 875.52h668.25728A95.85152 95.85152 0 0 0 942.08 779.98592V329.0368A95.85664 95.85664 0 0 0 846.12608 233.472z m-189.14816 359.28064h-109.73696v109.30176a31.7952 31.7952 0 0 1-63.59552 0v-109.27616H373.90848a31.66208 31.66208 0 1 1 0-63.31904h109.73696V420.18816a31.7952 31.7952 0 0 1 63.59552 0v109.27104h109.73696a31.66208 31.66208 0 1 1 0 63.31904z" fill="#5288F5" p-id="17523"></path></svg>
+				2016-2020年《药事管理》真题及答案解析（完整版）
+      		</div>
+      		<div class="right">
+				<svg onclick="showRgisterForm()" t="1615216234703" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13122" width="22" height="22"><path d="M315.532045 1021.512475c-68.11633-141.672668-31.803119-222.807819 20.504643-299.270143 57.259564-83.785411 72.068472-166.640906 72.068472-166.640906s45.054419 58.561446 27.014054 150.134901c79.60079-88.597725 94.61893-229.735691 82.57652-283.74055 179.822462 125.724612 256.703249 397.864463 153.13388 599.586442 551.021591-311.77751 137.046337-778.269757 65.047608-830.809998 24.015075 52.516993 28.571662 141.509933-19.900197 184.681272C633.818966 63.861966 430.655618 0 430.655618 0c24.061571 160.64295-87.086612 336.280791-194.212909 467.56165-3.812655-64.047949-7.764797-108.242196-41.474243-169.593389-7.602061 116.425455-96.478761 211.253615-120.540332 327.841806-32.593548 157.969442 24.456785 273.534724 241.173655 395.702408h-0.069744z m0 0" p-id="13123" fill="#f19004"></path></svg>
+      			<svg onclick="showRgisterForm()" t="1615215386726" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5156" width="24" height="24"><path d="M853.333333 938.666667H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333334V469.333333a85.333333 85.333333 0 0 1 85.333334-85.333333h117.333333a32 32 0 0 1 0 64H170.666667a21.333333 21.333333 0 0 0-21.333334 21.333333v384a21.333333 21.333333 0 0 0 21.333334 21.333334h682.666666a21.333333 21.333333 0 0 0 21.333334-21.333334V469.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-117.333333a32 32 0 0 1 0-64H853.333333a85.333333 85.333333 0 0 1 85.333334 85.333333v384a85.333333 85.333333 0 0 1-85.333334 85.333334z" fill="#333333" p-id="5157"></path><path d="M715.029333 543.552a32.810667 32.810667 0 0 0-46.250666 0l-114.773334 114.261333V117.333333a32 32 0 0 0-64 0v539.733334l-114.112-113.578667a32.789333 32.789333 0 0 0-46.229333 0 32.426667 32.426667 0 0 0 0 46.037333l169.557333 168.810667a32.810667 32.810667 0 0 0 46.250667 0l169.557333-168.810667a32.469333 32.469333 0 0 0 0-45.973333z" fill="#FF9C00" p-id="5158"></path></svg>
+      		</div>
+      		</div>
+      		<div class="line">
+      			<div class="left">
+      			<svg t="1615217014319" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="17522" width="29" height="29"><path d="M846.12608 233.472h-330.83904L427.52 143.36H177.8688A95.8464 95.8464 0 0 0 81.92 238.89408v541.09184A95.8464 95.8464 0 0 0 177.8688 875.52h668.25728A95.85152 95.85152 0 0 0 942.08 779.98592V329.0368A95.85664 95.85664 0 0 0 846.12608 233.472z m-189.14816 359.28064h-109.73696v109.30176a31.7952 31.7952 0 0 1-63.59552 0v-109.27616H373.90848a31.66208 31.66208 0 1 1 0-63.31904h109.73696V420.18816a31.7952 31.7952 0 0 1 63.59552 0v109.27104h109.73696a31.66208 31.66208 0 1 1 0 63.31904z" fill="#5288F5" p-id="17523"></path></svg>
+				2021年执业药师《药学综合》进阶卷300道答案及解析
+      		</div>
+      		<div class="right">
+      			<svg onclick="showRgisterForm()" t="1615215386726" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5156" width="24" height="24"><path d="M853.333333 938.666667H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333334V469.333333a85.333333 85.333333 0 0 1 85.333334-85.333333h117.333333a32 32 0 0 1 0 64H170.666667a21.333333 21.333333 0 0 0-21.333334 21.333333v384a21.333333 21.333333 0 0 0 21.333334 21.333334h682.666666a21.333333 21.333333 0 0 0 21.333334-21.333334V469.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-117.333333a32 32 0 0 1 0-64H853.333333a85.333333 85.333333 0 0 1 85.333334 85.333333v384a85.333333 85.333333 0 0 1-85.333334 85.333334z" fill="#333333" p-id="5157"></path><path d="M715.029333 543.552a32.810667 32.810667 0 0 0-46.250666 0l-114.773334 114.261333V117.333333a32 32 0 0 0-64 0v539.733334l-114.112-113.578667a32.789333 32.789333 0 0 0-46.229333 0 32.426667 32.426667 0 0 0 0 46.037333l169.557333 168.810667a32.810667 32.810667 0 0 0 46.250667 0l169.557333-168.810667a32.469333 32.469333 0 0 0 0-45.973333z" fill="#FF9C00" p-id="5158"></path></svg>
+      		</div>
+      		</div>
+      		<div class="line">
+      			<div class="left">
+      			<svg t="1615217297471" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="18769" width="31" height="31"><path d="M97.9 376h828.4v269.2H97.9z" fill="#F95F5D" p-id="18770"></path><path d="M926.3 376V161.5c0-26.6-23.8-50.3-52.1-50.3H149.9c-28.3 0-52.1 23.7-52.1 50.3V376h828.5z m0 0" fill="#55C7F7" p-id="18771"></path><path d="M97.9 645.2v214.5c0 26.6 23.6 50.3 51.7 50.3h725c28.1 0 51.7-23.7 51.7-50.3V645.2H97.9z m0 0" fill="#7ECF3B" p-id="18772"></path><path d="M421.8 111.2h184.9V910H421.8z" fill="#FDAF42" p-id="18773"></path><path d="M606.7 457.4v112.4H413V457.4h193.7m31.1-45.9H381.9c-4.4 0-11.8 4.4-11.8 11.8v179c0 4.4 4.4 11.8 11.8 11.8h255.9c4.4 0 11.8-4.4 11.8-11.8v-179c-2.9-8.8-7.4-11.8-11.8-11.8z m0 0" fill="#FFFFFF" p-id="18774"></path></svg>
+				2021年执业药师《中药一》考点模拟题库（核心必会考点）
+      		</div>
+      		<div class="right">
+<svg onclick="showRgisterForm()" t="1615217729284" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23382" width="24" height="24"><path d="M937.45 315.483c-14.289-14.435-33.41-22.386-53.844-22.386-41.598 0-75.436 33.456-75.436 74.572 0 11.53 2.723 22.845 7.936 33.146-44.19 26.749-88.361 53.399-132.298 79.907A150897.759 150897.759 0 0 1 588.05 308.37l-29.024-52.203c17.942-14.082 28.46-35.38 28.46-58.269 0-41.114-33.844-74.574-75.445-74.574-41.598 0-75.44 33.459-75.44 74.574 0 23.406 11.382 45.6 30.126 59.54-4.205 7.564-8.392 15.127-12.58 22.687l-15.717 28.321c-31.388 56.563-63.772 114.89-95.806 172.24a2344.055 2344.055 0 0 1-25.726-15.523l-11.5-6.924a30393.614 30393.614 0 0 0-57.282-34.601c-13.91-8.402-27.84-16.8-41.789-25.237 5.792-10.674 8.822-22.634 8.822-35.028 0-41.118-33.84-74.578-75.44-74.578-41.597 0-75.441 33.46-75.441 74.578 0 35.768 25.866 66.39 60.942 73.176l88.286 298.761c0.826 2.792 1.572 5.496 2.294 8.109 4.5 16.304 9.15 33.166 27.04 33.31 56.958 0.214 116.745 0.289 177.44 0.289 61.708 0 124.361-0.075 185.971-0.15 59.573-0.074 118.174-0.14 173.995-0.14 22.293 0 26.23-16.575 29.705-31.201 0.77-3.251 1.584-6.693 2.624-10.224l87.005-294.801c34.107-7.397 59.26-37.876 59.26-72.788 0.113-19.627-7.477-38.178-21.38-52.23zM512.042 168.404c16.549 0 30.018 13.233 30.018 29.493 0 16.263-13.47 29.496-30.018 29.496-16.549 0-30.015-13.232-30.015-29.496 0-16.26 13.466-29.493 30.015-29.493zM161.408 383.926c-5.708 5.765-13.376 8.939-21.59 8.939-16.545 0-30.011-13.233-30.011-29.493 0-16.262 13.466-29.496 30.011-29.496 16.552 0 30.018 13.233 30.018 29.532 0.042 7.705-2.952 14.982-8.428 20.518z m656.935 172.21l-24.3 82.421-20.91 79.206c-0.796 2.76-0.82 7.462-0.436 19.057h-518.12c2.923-7.103 3.716-10.823 2.726-14.145l-71.976-243.933c-3.096-10.63-6.299-21.313-9.463-31.867l-4.667-15.59c0.4-0.175 0.796-0.357 1.19-0.542l109.576 66.203a900.287 900.287 0 0 1 11.378 6.919c10.894 6.633 22.224 13.486 33.447 20.122 9.558 5.64 18.574 7.495 28.944 4.885 6.412-1.682 15.449-6.194 22.063-18.117 33.695-60.528 68.046-122.26 101.175-182a16402.851 16402.851 0 0 0 22.875-41.195l8.255-14.885c1.924 0.057 3.87 0.018 5.938-0.101l32.15 57.825a144632.724 144632.724 0 0 1 97.894 176.184c5.153 9.191 12.123 19.036 24.78 22.395a30.708 30.708 0 0 0 7.98 1.023c9.613 0 18.173-4.41 24.557-8.255a75672.147 75672.147 0 0 0 74.517-45.037c23.582-14.265 47.157-28.53 70.754-42.773a79.882 79.882 0 0 0 4.983 2.35 141929.053 141929.053 0 0 1-35.31 119.85z m65.263-158.971c-16.545 0-30.011-13.233-30.011-29.496 0-16.26 13.466-29.49 30.011-29.49 16.552 0 30.018 13.23 30.018 29.49 0 16.262-13.466 29.496-30.018 29.496zM568.134 850.777H285.221c-13.12 0-23.79 10.742-23.79 23.945 0 13.209 10.67 23.958 23.79 23.958h282.913c13.114 0 23.776-10.749 23.776-23.958 0-13.203-10.662-23.945-23.776-23.945z m169.76 0h-56.588c-6.359 0-12.335 2.499-16.812 7.018-4.503 4.51-6.97 10.53-6.97 16.927 0 13.066 10.433 23.71 23.352 23.942h57.017c13.11 0 23.772-10.733 23.772-23.942 0.001-13.203-10.66-23.945-23.771-23.945z" p-id="23383" fill="#ef9108"></path></svg>
+      			<svg onclick="showRgisterForm()" t="1615215386726" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5156" width="24" height="24"><path d="M853.333333 938.666667H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333334V469.333333a85.333333 85.333333 0 0 1 85.333334-85.333333h117.333333a32 32 0 0 1 0 64H170.666667a21.333333 21.333333 0 0 0-21.333334 21.333333v384a21.333333 21.333333 0 0 0 21.333334 21.333334h682.666666a21.333333 21.333333 0 0 0 21.333334-21.333334V469.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-117.333333a32 32 0 0 1 0-64H853.333333a85.333333 85.333333 0 0 1 85.333334 85.333333v384a85.333333 85.333333 0 0 1-85.333334 85.333334z" fill="#333333" p-id="5157"></path><path d="M715.029333 543.552a32.810667 32.810667 0 0 0-46.250666 0l-114.773334 114.261333V117.333333a32 32 0 0 0-64 0v539.733334l-114.112-113.578667a32.789333 32.789333 0 0 0-46.229333 0 32.426667 32.426667 0 0 0 0 46.037333l169.557333 168.810667a32.810667 32.810667 0 0 0 46.250667 0l169.557333-168.810667a32.469333 32.469333 0 0 0 0-45.973333z" fill="#FF9C00" p-id="5158"></path></svg>
+      		</div>
+      		</div>
+      		<div class="line">
+      			<div class="left">
+      			<svg t="1615217171667" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="18393" width="20" height="20"><path d="M981.333333 276.053333V981.333333a42.666667 42.666667 0 0 1-42.666666 42.666667H85.333333a42.666667 42.666667 0 0 1-42.666666-42.666667V42.666667a42.666667 42.666667 0 0 1 42.666666-42.666667h619.946667z" fill="#4C98FC" p-id="18394"></path><path d="M705.28 233.386667V0L981.333333 276.053333H747.946667a42.666667 42.666667 0 0 1-42.666667-42.666666z" fill="#A5D1FD" p-id="18395"></path><path d="M281.813333 821.333333m0-26.666666l0-330.666667q0-26.666667 26.666667-26.666667l0 0q26.666667 0 26.666667 26.666667l0 330.666667q0 26.666667-26.666667 26.666666l0 0q-26.666667 0-26.666667-26.666666Z" fill="#FFFFFF" p-id="18396"></path><path d="M270.714615 794.58437m18.85618-18.856181l203.646753-203.646753q18.856181-18.856181 37.712362 0l0 0q18.856181 18.856181 0 37.712362l-203.646753 203.646753q-18.856181 18.856181-37.712362 0l0 0q-18.856181-18.856181 0-37.712362Z" fill="#FFFFFF" p-id="18397"></path><path d="M511.989199 553.286667m18.856181 18.856181l203.646753 203.646753q18.856181 18.856181 0 37.712362l0 0q-18.856181 18.856181-37.712362 0l-203.646753-203.646753q-18.856181-18.856181 0-37.712362l0 0q18.856181-18.856181 37.712362 0Z" fill="#FFFFFF" p-id="18398"></path><path d="M688.853333 821.333333m0-26.666666l0-330.666667q0-26.666667 26.666667-26.666667l0 0q26.666667 0 26.666667 26.666667l0 330.666667q0 26.666667-26.666667 26.666666l0 0q-26.666667 0-26.666667-26.666666Z" fill="#FFFFFF" p-id="18399"></path></svg>
+				2021年执业药师《中药二》精选考点汇总
+      		</div>
+      		<div class="right">
+<svg onclick="showRgisterForm()" t="1615217829478" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="25485" width="24" height="24"><path d="M871.706 604.383a28.798 28.798 0 0 0-0.424-2.848c-10.778-53.757-30.987-96.52-60.068-127.102-32.134-33.794-75.04-51.656-124.078-51.656h-81.33V275.923c0-32.759-7.763-61.089-22.449-81.929-18.111-25.701-45.438-39.286-79.025-39.286-32.289 0-59.422 12.159-80.643 36.14-15.932 18.003-28.464 42.428-39.44 76.865-0.122 0.384-0.237 0.77-0.342 1.158-0.104 0.378-10.524 38.298-26.585 77.728-26.383 64.768-43.714 75-46.197 76.177h-42.242c-2.111 0-4.164 0.241-6.146 0.671a28.941 28.941 0 0 0-6.146-0.671 28.726 28.726 0 0 0-16.068 4.887 114.914 114.914 0 0 0-27.945-3.444c-63.359 0-114.721 51.362-114.721 114.721v304.481c0 63.359 51.363 114.721 114.721 114.721 12.383 0 24.297-1.986 35.47-5.616 2.7 0.835 5.568 1.287 8.542 1.287 2.236 0 4.404-0.279 6.494-0.76 2.09 0.481 4.257 0.76 6.494 0.76h433.431c62.209 0 125.171-30.111 160.402-76.711 25.787-34.109 34.238-74.412 23.931-113.787l-15.636-158.932z m-54.338 237.91c-23.949 31.676-70.974 53.8-114.359 53.8H314.484c8.172-15.777 12.816-33.677 12.816-52.671V538.941c0-21.349-5.851-41.324-16.008-58.443h0.655c35.22 0 65.717-33.439 95.976-105.232 17.999-42.705 29.879-84.74 31.493-90.56 19.211-59.972 39.851-72.277 64.916-72.277 29.032 0 43.753 21.362 43.753 63.494v175.715c0 15.94 12.922 28.861 28.861 28.861h110.191c82.849 0 114.952 70.898 127.27 131.001l15.73 159.878a28.91 28.91 0 0 0 0.954 5.042c6.525 23.035 1.908 45.197-13.723 65.873zM931.512 159.915a14.43 14.43 0 0 0-11.649-9.821l-74.355-10.804-33.253-67.377a14.431 14.431 0 0 0-25.88 0l-33.253 67.377-74.355 10.804a14.43 14.43 0 0 0-7.997 24.614l53.804 52.446-12.701 74.055a14.429 14.429 0 0 0 20.937 15.212l66.505-34.964 66.505 34.964a14.414 14.414 0 0 0 6.714 1.657 14.43 14.43 0 0 0 14.224-16.87l-12.701-74.055 53.804-52.446a14.43 14.43 0 0 0 3.651-14.792z" fill="#E75934" p-id="25486"></path></svg>
+      			<svg onclick="showRgisterForm()" t="1615215386726" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5156" width="24" height="24"><path d="M853.333333 938.666667H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333334V469.333333a85.333333 85.333333 0 0 1 85.333334-85.333333h117.333333a32 32 0 0 1 0 64H170.666667a21.333333 21.333333 0 0 0-21.333334 21.333333v384a21.333333 21.333333 0 0 0 21.333334 21.333334h682.666666a21.333333 21.333333 0 0 0 21.333334-21.333334V469.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-117.333333a32 32 0 0 1 0-64H853.333333a85.333333 85.333333 0 0 1 85.333334 85.333333v384a85.333333 85.333333 0 0 1-85.333334 85.333334z" fill="#333333" p-id="5157"></path><path d="M715.029333 543.552a32.810667 32.810667 0 0 0-46.250666 0l-114.773334 114.261333V117.333333a32 32 0 0 0-64 0v539.733334l-114.112-113.578667a32.789333 32.789333 0 0 0-46.229333 0 32.426667 32.426667 0 0 0 0 46.037333l169.557333 168.810667a32.810667 32.810667 0 0 0 46.250667 0l169.557333-168.810667a32.469333 32.469333 0 0 0 0-45.973333z" fill="#FF9C00" p-id="5158"></path></svg>
+      		</div>
+      		</div>
+      		<div class="line">
+      			<div class="left">
+      			      			<svg t="1615217297471" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="18769" width="22" height="22"><path d="M97.9 376h828.4v269.2H97.9z" fill="#F95F5D" p-id="18770"></path><path d="M926.3 376V161.5c0-26.6-23.8-50.3-52.1-50.3H149.9c-28.3 0-52.1 23.7-52.1 50.3V376h828.5z m0 0" fill="#55C7F7" p-id="18771"></path><path d="M97.9 645.2v214.5c0 26.6 23.6 50.3 51.7 50.3h725c28.1 0 51.7-23.7 51.7-50.3V645.2H97.9z m0 0" fill="#7ECF3B" p-id="18772"></path><path d="M421.8 111.2h184.9V910H421.8z" fill="#FDAF42" p-id="18773"></path><path d="M606.7 457.4v112.4H413V457.4h193.7m31.1-45.9H381.9c-4.4 0-11.8 4.4-11.8 11.8v179c0 4.4 4.4 11.8 11.8 11.8h255.9c4.4 0 11.8-4.4 11.8-11.8v-179c-2.9-8.8-7.4-11.8-11.8-11.8z m0 0" fill="#FFFFFF" p-id="18774"></path></svg>
+				2021年执业药师《中药综合》章节每日一练
+      		</div>
+      		<div class="right">
+				<svg onclick="showRgisterForm()" t="1615216234703" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13122" width="24" height="24"><path d="M315.532045 1021.512475c-68.11633-141.672668-31.803119-222.807819 20.504643-299.270143 57.259564-83.785411 72.068472-166.640906 72.068472-166.640906s45.054419 58.561446 27.014054 150.134901c79.60079-88.597725 94.61893-229.735691 82.57652-283.74055 179.822462 125.724612 256.703249 397.864463 153.13388 599.586442 551.021591-311.77751 137.046337-778.269757 65.047608-830.809998 24.015075 52.516993 28.571662 141.509933-19.900197 184.681272C633.818966 63.861966 430.655618 0 430.655618 0c24.061571 160.64295-87.086612 336.280791-194.212909 467.56165-3.812655-64.047949-7.764797-108.242196-41.474243-169.593389-7.602061 116.425455-96.478761 211.253615-120.540332 327.841806-32.593548 157.969442 24.456785 273.534724 241.173655 395.702408h-0.069744z m0 0" p-id="13123" fill="#f19004"></path></svg>
+      			<svg onclick="showRgisterForm()" t="1615215386726" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5156" width="24" height="24"><path d="M853.333333 938.666667H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333334V469.333333a85.333333 85.333333 0 0 1 85.333334-85.333333h117.333333a32 32 0 0 1 0 64H170.666667a21.333333 21.333333 0 0 0-21.333334 21.333333v384a21.333333 21.333333 0 0 0 21.333334 21.333334h682.666666a21.333333 21.333333 0 0 0 21.333334-21.333334V469.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-117.333333a32 32 0 0 1 0-64H853.333333a85.333333 85.333333 0 0 1 85.333334 85.333333v384a85.333333 85.333333 0 0 1-85.333334 85.333334z" fill="#333333" p-id="5157"></path><path d="M715.029333 543.552a32.810667 32.810667 0 0 0-46.250666 0l-114.773334 114.261333V117.333333a32 32 0 0 0-64 0v539.733334l-114.112-113.578667a32.789333 32.789333 0 0 0-46.229333 0 32.426667 32.426667 0 0 0 0 46.037333l169.557333 168.810667a32.810667 32.810667 0 0 0 46.250667 0l169.557333-168.810667a32.469333 32.469333 0 0 0 0-45.973333z" fill="#FF9C00" p-id="5158"></path></svg>
+      		</div>
+      		</div>
+      		<div class="line">
+      			<div class="left">
+      			<svg t="1615217171667" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="18393" width="25" height="25"><path d="M981.333333 276.053333V981.333333a42.666667 42.666667 0 0 1-42.666666 42.666667H85.333333a42.666667 42.666667 0 0 1-42.666666-42.666667V42.666667a42.666667 42.666667 0 0 1 42.666666-42.666667h619.946667z" fill="#4C98FC" p-id="18394"></path><path d="M705.28 233.386667V0L981.333333 276.053333H747.946667a42.666667 42.666667 0 0 1-42.666667-42.666666z" fill="#A5D1FD" p-id="18395"></path><path d="M281.813333 821.333333m0-26.666666l0-330.666667q0-26.666667 26.666667-26.666667l0 0q26.666667 0 26.666667 26.666667l0 330.666667q0 26.666667-26.666667 26.666666l0 0q-26.666667 0-26.666667-26.666666Z" fill="#FFFFFF" p-id="18396"></path><path d="M270.714615 794.58437m18.85618-18.856181l203.646753-203.646753q18.856181-18.856181 37.712362 0l0 0q18.856181 18.856181 0 37.712362l-203.646753 203.646753q-18.856181 18.856181-37.712362 0l0 0q-18.856181-18.856181 0-37.712362Z" fill="#FFFFFF" p-id="18397"></path><path d="M511.989199 553.286667m18.856181 18.856181l203.646753 203.646753q18.856181 18.856181 0 37.712362l0 0q-18.856181 18.856181-37.712362 0l-203.646753-203.646753q-18.856181-18.856181 0-37.712362l0 0q18.856181-18.856181 37.712362 0Z" fill="#FFFFFF" p-id="18398"></path><path d="M688.853333 821.333333m0-26.666666l0-330.666667q0-26.666667 26.666667-26.666667l0 0q26.666667 0 26.666667 26.666667l0 330.666667q0 26.666667-26.666667 26.666666l0 0q-26.666667 0-26.666667-26.666666Z" fill="#FFFFFF" p-id="18399"></path></svg>
+				2021执业药师《药学二》冲刺卷200题答案及解析
+      		</div>
+      		<div class="right">
+				<svg onclick="showRgisterForm()" t="1615216234703" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="13122" width="24" height="24"><path d="M315.532045 1021.512475c-68.11633-141.672668-31.803119-222.807819 20.504643-299.270143 57.259564-83.785411 72.068472-166.640906 72.068472-166.640906s45.054419 58.561446 27.014054 150.134901c79.60079-88.597725 94.61893-229.735691 82.57652-283.74055 179.822462 125.724612 256.703249 397.864463 153.13388 599.586442 551.021591-311.77751 137.046337-778.269757 65.047608-830.809998 24.015075 52.516993 28.571662 141.509933-19.900197 184.681272C633.818966 63.861966 430.655618 0 430.655618 0c24.061571 160.64295-87.086612 336.280791-194.212909 467.56165-3.812655-64.047949-7.764797-108.242196-41.474243-169.593389-7.602061 116.425455-96.478761 211.253615-120.540332 327.841806-32.593548 157.969442 24.456785 273.534724 241.173655 395.702408h-0.069744z m0 0" p-id="13123" fill="#f19004"></path></svg>
+      			<svg onclick="showRgisterForm()" t="1615215386726" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5156" width="24" height="24"><path d="M853.333333 938.666667H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333334V469.333333a85.333333 85.333333 0 0 1 85.333334-85.333333h117.333333a32 32 0 0 1 0 64H170.666667a21.333333 21.333333 0 0 0-21.333334 21.333333v384a21.333333 21.333333 0 0 0 21.333334 21.333334h682.666666a21.333333 21.333333 0 0 0 21.333334-21.333334V469.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-117.333333a32 32 0 0 1 0-64H853.333333a85.333333 85.333333 0 0 1 85.333334 85.333333v384a85.333333 85.333333 0 0 1-85.333334 85.333334z" fill="#333333" p-id="5157"></path><path d="M715.029333 543.552a32.810667 32.810667 0 0 0-46.250666 0l-114.773334 114.261333V117.333333a32 32 0 0 0-64 0v539.733334l-114.112-113.578667a32.789333 32.789333 0 0 0-46.229333 0 32.426667 32.426667 0 0 0 0 46.037333l169.557333 168.810667a32.810667 32.810667 0 0 0 46.250667 0l169.557333-168.810667a32.469333 32.469333 0 0 0 0-45.973333z" fill="#FF9C00" p-id="5158"></path></svg>
+      		</div>
+      		</div>
+      		<div class="line">
+      			<div class="left">
+      			<svg t="1615217618941" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="19600" width="22" height="22"><path d="M901.850593 926.476283a48.761858 48.761858 0 0 1-48.761859 48.761859H170.422718a48.761858 48.761858 0 0 1-48.761858-48.761859V48.762834a48.761858 48.761858 0 0 1 48.761858-48.761859h418.864363a48.761858 48.761858 0 0 1 34.620919 14.140939l263.801654 263.801654a48.761858 48.761858 0 0 1 14.140939 34.620919V926.476283z" fill="#EBECF0" p-id="19601"></path><path d="M901.850593 926.476283v48.761859a48.761858 48.761858 0 0 1-48.761859 48.761858H170.422718a48.761858 48.761858 0 0 1-48.761858-48.761858v-48.761859a48.761858 48.761858 0 0 0 48.761858 48.761859h682.666016a48.761858 48.761858 0 0 0 48.761859-48.761859z" fill="#C1C7D0" p-id="19602"></path><path d="M24.137143 536.381417h975.237166v243.809291a48.761858 48.761858 0 0 1-48.761858 48.761859H72.899001a48.761858 48.761858 0 0 1-48.761858-48.761859v-243.809291z" fill="#FF5630" p-id="19603"></path><path d="M121.66086 536.381417V438.8577l-97.523717 97.523717h97.523717zM901.850593 536.381417l0.975237-97.523717 97.036098 97.523717H901.850593z" fill="#DE350B" p-id="19604"></path><path d="M267.946434 585.143275h84.845634a57.051374 57.051374 0 0 1 41.935198 15.603795 55.1009 55.1009 0 0 1 16.091413 40.959961 55.588518 55.588518 0 0 1-16.091413 40.959961 59.001849 59.001849 0 0 1-43.398054 16.091413h-48.761858v76.556118H267.946434z m32.670446 81.919922h43.885672a42.422817 42.422817 0 0 0 25.843785-6.339041 23.893311 23.893311 0 0 0 7.801897-19.992362q0-24.868548-32.670445-24.868548h-44.860909zM434.71199 588.068987H511.755726a73.142787 73.142787 0 0 1 58.51423 25.356166 100.937047 100.937047 0 0 1 21.942836 68.266602 110.689418 110.689418 0 0 1-20.967599 69.729457A71.679932 71.679932 0 0 1 511.755726 780.190708H434.71199z m32.670445 158.963658H511.755726a43.398054 43.398054 0 0 0 36.083775-17.066651A75.093262 75.093262 0 0 0 560.517584 682.666992a70.704695 70.704695 0 0 0-13.65332-48.761859 48.761858 48.761858 0 0 0-37.546631-16.579031h-41.935198zM755.565018 618.788957h-100.937047v45.348529H755.565018v31.207589h-100.937047v81.919922h-32.670445v-190.171248H755.565018z" fill="#FFFFFF" p-id="19605"></path><path d="M901.850593 312.564487v6.82666h-263.801654a48.761858 48.761858 0 0 1-48.761858-48.761858V0.000975a48.761858 48.761858 0 0 1 34.620919 14.140939l264.289272 263.801654a48.761858 48.761858 0 0 1 13.653321 34.620919z" fill="#C1C7D0" p-id="19606"></path></svg>
+				2021执业药师《药事管理》备考经验和心得
+      		</div>
+      		<div class="right">
+				<svg onclick="showRgisterForm()" t="1615217829478" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="25485" width="24" height="24"><path d="M871.706 604.383a28.798 28.798 0 0 0-0.424-2.848c-10.778-53.757-30.987-96.52-60.068-127.102-32.134-33.794-75.04-51.656-124.078-51.656h-81.33V275.923c0-32.759-7.763-61.089-22.449-81.929-18.111-25.701-45.438-39.286-79.025-39.286-32.289 0-59.422 12.159-80.643 36.14-15.932 18.003-28.464 42.428-39.44 76.865-0.122 0.384-0.237 0.77-0.342 1.158-0.104 0.378-10.524 38.298-26.585 77.728-26.383 64.768-43.714 75-46.197 76.177h-42.242c-2.111 0-4.164 0.241-6.146 0.671a28.941 28.941 0 0 0-6.146-0.671 28.726 28.726 0 0 0-16.068 4.887 114.914 114.914 0 0 0-27.945-3.444c-63.359 0-114.721 51.362-114.721 114.721v304.481c0 63.359 51.363 114.721 114.721 114.721 12.383 0 24.297-1.986 35.47-5.616 2.7 0.835 5.568 1.287 8.542 1.287 2.236 0 4.404-0.279 6.494-0.76 2.09 0.481 4.257 0.76 6.494 0.76h433.431c62.209 0 125.171-30.111 160.402-76.711 25.787-34.109 34.238-74.412 23.931-113.787l-15.636-158.932z m-54.338 237.91c-23.949 31.676-70.974 53.8-114.359 53.8H314.484c8.172-15.777 12.816-33.677 12.816-52.671V538.941c0-21.349-5.851-41.324-16.008-58.443h0.655c35.22 0 65.717-33.439 95.976-105.232 17.999-42.705 29.879-84.74 31.493-90.56 19.211-59.972 39.851-72.277 64.916-72.277 29.032 0 43.753 21.362 43.753 63.494v175.715c0 15.94 12.922 28.861 28.861 28.861h110.191c82.849 0 114.952 70.898 127.27 131.001l15.73 159.878a28.91 28.91 0 0 0 0.954 5.042c6.525 23.035 1.908 45.197-13.723 65.873zM931.512 159.915a14.43 14.43 0 0 0-11.649-9.821l-74.355-10.804-33.253-67.377a14.431 14.431 0 0 0-25.88 0l-33.253 67.377-74.355 10.804a14.43 14.43 0 0 0-7.997 24.614l53.804 52.446-12.701 74.055a14.429 14.429 0 0 0 20.937 15.212l66.505-34.964 66.505 34.964a14.414 14.414 0 0 0 6.714 1.657 14.43 14.43 0 0 0 14.224-16.87l-12.701-74.055 53.804-52.446a14.43 14.43 0 0 0 3.651-14.792z" fill="#E75934" p-id="25486"></path></svg>
+      			<svg onclick="showRgisterForm()" t="1615215386726" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5156" width="24" height="24"><path d="M853.333333 938.666667H170.666667a85.333333 85.333333 0 0 1-85.333334-85.333334V469.333333a85.333333 85.333333 0 0 1 85.333334-85.333333h117.333333a32 32 0 0 1 0 64H170.666667a21.333333 21.333333 0 0 0-21.333334 21.333333v384a21.333333 21.333333 0 0 0 21.333334 21.333334h682.666666a21.333333 21.333333 0 0 0 21.333334-21.333334V469.333333a21.333333 21.333333 0 0 0-21.333334-21.333333h-117.333333a32 32 0 0 1 0-64H853.333333a85.333333 85.333333 0 0 1 85.333334 85.333333v384a85.333333 85.333333 0 0 1-85.333334 85.333334z" fill="#333333" p-id="5157"></path><path d="M715.029333 543.552a32.810667 32.810667 0 0 0-46.250666 0l-114.773334 114.261333V117.333333a32 32 0 0 0-64 0v539.733334l-114.112-113.578667a32.789333 32.789333 0 0 0-46.229333 0 32.426667 32.426667 0 0 0 0 46.037333l169.557333 168.810667a32.810667 32.810667 0 0 0 46.250667 0l169.557333-168.810667a32.469333 32.469333 0 0 0 0-45.973333z" fill="#FF9C00" p-id="5158"></path></svg>
+      		</div>
+      		</div>
+      	</div>
+      	<nav aria-label="Page navigation" style="display: flex;">
+		  <ul class="pagination" style="margin: 0 auto;" onclick="showRgisterForm()">
+		    <li>
+		      <a href="javascript:void(0);" aria-label="Previous">
+		        <span aria-hidden="true">&laquo;</span>
+		      </a>
+		    </li>
+		    <li><a href="javascript:void(0);">1</a></li>
+		    <li><a href="javascript:void(0);">2</a></li>
+		    <li><a href="javascript:void(0);">3</a></li>
+		    <li><a href="javascript:void(0);">...</a></li>
+		    <li><a href="javascript:void(0);">12</a></li>
+		    <li>
+		      <a href="javascript:void(0);" aria-label="Next">
+		        <span aria-hidden="true">&raquo;</span>
+		      </a>
+		    </li>
+		  </ul>
+		</nav>
+		<div class="btn-wrap" style="padding: 20px 0 10px;display: flex;justify-content: center">
+			<button type="button" class="btn btn-warning" onclick="showRgisterForm()">点击所有专业全部打包下载</button>
+		</div>
+      </div>
+      <div class="video-container">
+      	<h3 class="text-center">2021执业药师名师视频</h3>
+      	<p>由名师进行整理汇总+视频讲解，让您备考效率提升50%，拿下证书so easy!</p>
+      	<div class="content">
+	      	<div class="btn-group-vertical" role="group" aria-label="...">
+			  <button type="button" class="btn btn-default active">药学一</button>
+			  <button type="button" class="btn btn-default">药学二</button>
+			  <button type="button" class="btn btn-default">药学综合</button>
+			  <button type="button" class="btn btn-default">中药一</button>
+			  <button type="button" class="btn btn-default">中药二</button>
+			  <button type="button" class="btn btn-default">中药综合</button>
+			  <button type="button" class="btn btn-default">药事管理</button>
+			</div>
+			<div class="video swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./images/video1.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/video2.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/video3.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/video4.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/video5.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/video6.jpg" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/video7.jpg" />
+					</div>
+				</div>
+			</div>
+      	</div>
+      	<div class="try-listen">
+      		<h5 class="text-center">执业药师精品课程<span>免费试听</span></h5>
+      		<div class="select-wrap">
+      			<span>试听科目：</span>
+      			<select class="form-control try-listen-subject">
+				  <option value="" disabled selected>请选择您想试听的科目</option>  
+				  <option value="药学一">药学一</option>
+				  <option value="药学二">药学二</option>
+				  <option value="药学综合">药学综合</option>
+				  <option value="中药一">中药一</option>
+				  <option value="中药二">中药二</option>
+				  <option value="中药综合">中药综合</option>
+				  <option value="药事管理">药事管理</option>
+				</select>
+      		</div>
+	      	<div class="form-phone">
+	            <input class="form-control try-listen-phone" type="text" placeholder="请输入您的手机号">
+	        </div>
+	        <button type="button" class="search-res btn-primary btn btn-default" onclick="submitTryListenForm()">获取课程试听 >></button>
+      	</div>
+      </div>
+      <div class="why-container">
+      	<h3 class="text-center">报考执业药师，<br />为什么很多人都选择了优学</h3>
+      	<div class="step-list">
+      		<div class="step-item">
+      			<span class="title">step1：</span>
+      			<div class="info">班主任1v1服务每个学员只能选择1位班主任收集并解决学员学习过程中遇到的任何难题。</div>
+      		</div>
+      		<div class="step-item">
+      			<span class="title">step2：</span>
+      			<div class="info">24小时在线服务每个学员都有一位自己的学管师，在备考阶段，对你全方位24h的辅导，随问随答。</div>
+      		</div>
+      		<div class="step-item">
+      			<span class="title">step3：</span>
+      			<div class="info">考情通知在第一时间内对突发情况如政策/条件变动，报名/考试时间等考试信息给学员进行通知。</div>
+      		</div>
+      		<div class="step-item">
+      			<span class="title">step4：</span>
+      			<div class="info">报名签订协议，如果不幸没有考过可以免费重修！</div>
+      		</div>
+      		<div class="step-item">
+      			<span class="title">step5：</span>
+      			<div class="info">专业教学督导根据学员个人情况和进度，量身打造学习计划，督导学员学习现状发送阶段测试，检查学习效果。</div>
+      		</div>
+      		<div class="step-item">
+      			<span class="title">step6：</span>
+      			<div class="info">学员评估根据不同的考生设计不同的班型，班主任会帮助学员进行评估测试，让考生用最小的成本最高的效率一次性拿下证书。
+      			</div>
+      		</div>
+      	</div>
+      </div>
+      <p class="text-center" style="color: #585858">版权所有：北京优学教育咨询有限公司</p>
+  	  <div class="modal-backgroud">
+  	  	<div class="content">
+  	  		<span class="glyphicon glyphicon-remove" aria-hidden="true" onclick="closeRgisterForm()"></span>
+  	  		<div class="text-center title">注册获取详情</div>
+  	  		<div class="form">
+  	  			<div class="line">
+  	  				<span>电话：</span>
+  	  				<input class="form-control input-phone" type="number" placeholder="请输入您的手机号" />
+  	  			</div>
+  	  			<div class="line">
+  	  				<span>密码：</span>
+  	  				<input class="form-control input-password" type="password" placeholder="请输入密码" />
+  	  			</div>
+  	  			<div class="line" style="margin: 25px 0 15px">
+  	  				<button type="button" class="btn-primary btn btn-default" onclick="submitRegisterForm()">立即注册</button>
+  	  			</div>
+  	  		</div>
+  	  	</div>
+  	  </div>
+  	</div>
+    <script src="https://cdn.staticfile.org/jquery/1.10.0/jquery.min.js"></script>
+  	<script src="https://cdn.staticfile.org/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  	<script>   
+  	  // 出现注册表单
+  	  function showRgisterForm(){
+  	  	$('.modal-backgroud').css({'display': 'flex'});
+  	  }
+  	  // 关闭注册表单
+  	  function closeRgisterForm(){
+  	  	$('.modal-backgroud').hide();
+  	  }
+      // 提交查询报名条件表单
+      function submitConditionForm() {
+        if(!$("input[name='project']:checked").val()) return alert('请选择您报考的项目');
+        if(!$("input[name='education']:checked").val()) return alert('请选择您的最高学历');
+        if(!$("input[name='major']:checked").val()) return alert('请选择您所学的专业');
+        if(!$("input[name='year']:checked").val()) return alert('请选择您的毕业年限');
+        if(!$("input[name='phone']").val()) return alert('请输入您的手机号');
+        if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test($("input[name='phone']").val())) return alert('手机号格式不正确');
+        var vals = $('#conditionForm').serializeArray();
+        var res = {};
+        console.log(vals);
+        for(var pa=0;pa<vals.length;pa++){
+          res[vals[pa].name] = vals[pa].value
+        }
+        //TODO: 查询报名条件类型
+        res.type = 'condition';
+        console.log(res);
+        $.ajax({
+          type: "get",
+          dataType: "json",
+          contentType: "application/json",
+          // TODO: 接口地址
+          url:'****', 
+          data: res,
+          success:function(res){
+            alert('您已提交成功，请耐心等待');
+          },
+          error: function(res){
+            alert(res.message||'查询结果出错');
+          }
+        });
+      }
+      // 提交查询报名时间表单
+      function submitTimeForm() {
+        if(!$("input[name='province']").val()) return alert('请选择省份');
+        if(!$("input[name='phone1']").val()) return alert('请输入您的手机号');
+        if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test($("input[name='phone1']").val())) return alert('手机号格式不正确');
+        var vals = $('#timeForm').serializeArray();
+        var res = {};
+        for(var pa=0;pa<vals.length;pa++){
+          res[vals[pa].name] = vals[pa].value
+        }
+        res.phone = res.phone1;
+        delete res.phone1;
+        //TODO: 查询报名时间类型
+        res.type = 'time';
+        console.log(res);
+        $.ajax({
+          type: "get",
+          dataType: "json",
+          contentType: "application/json",
+          // TODO: 接口地址
+          url:'****', 
+          data: res,
+          success:function(res){
+            alert('您已提交成功，请耐心等待');
+          },
+          error: function(res){
+            alert(res.message||'查询结果出错');
+          }
+        });
+      }
+      // 获取试听课程
+      function submitTryListenForm() {
+      	var subject = $('.try-listen-subject').val();
+      	var phone = $('.try-listen-phone').val();
+      	if(!subject) return alert('请选择您想试听的科目');
+        if(!phone) return alert('请输入您的手机号');
+        if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test(phone)) return alert('手机号格式不正确');
+      }
+      // 注册
+      function submitRegisterForm(){
+      	var phone = $('.input-phone').val();
+      	var password = $('.input-password').val();
+        if(!phone) return alert('请输入您的手机号');
+        if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test(phone)) return alert('手机号格式不正确');
+      	if(!password) return alert('请输入密码');
+      }
+  	  $(document).ready(function () {
+        var mySwiper1 = new Swiper('.system-condition .swiper-container',{
+          direction: 'vertical',
+          speed: 500,
+          autoplay : 3000,
+          loop: true
+        })
+
+        var mySwiper2 = new Swiper('.material-container .swiper-container',{
+          speed: 700,
+          autoplay : 4000,
+          loop: true,
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev'
+        })
+
+        var mySwiper3 = new Swiper('.video-container .swiper-container',{
+          direction: 'vertical',
+          speed: 500,
+        })
+
+        // 固定时间增长查询人数
+        var searchNum = Number($('.search-num').text());
+        var setAddSearchNumInterval = setInterval(function() {
+          searchNum = searchNum+(Math.round(Math.random())==0?1:2);
+          $(".search-num").text(searchNum);
+        },5000)
+
+        // 金刚区 考试时间 选中对应tab
+        $('.king-kong-area a:nth-child(6)').click(function(){
+        	$('.focus-container .tablist > div').removeClass('active');
+        	$('.focus-container .focus-tab-pane').removeClass('active');
+        	$('.focus-container .tablist > div:nth-child(3)').addClass('active');
+        	$('.focus-tab-content >div:nth-child(3)').addClass('active');
+        })
+
+        // 选择省份
+        $('.province-list .province-item').click(function() {
+          var ind = $(".province-list .province-item").index(this);
+          $('.province-list .province-item').removeClass('active');
+          $('.province-list .province-item:eq('+ind+')').addClass('active');
+          var provinceText = $(this).text();
+          if(provinceText.indexOf('更多')>=0) provinceText = '更多'
+          $("input[name='province']").val(provinceText);
+          $(".province-show").text(provinceText);
+        })
+
+        // 切换证书前景解读 常见问题 考试时间及科目tab
+        $('.focus-container .tablist > div').click(function(){
+          $('.focus-container .tablist > div').removeClass('active');
+          $('.focus-container .focus-tab-pane').removeClass('active');
+          $(this).addClass('active');
+          $('.focus-tab-content >div:nth-child('+($(this).index() + 1)+')').addClass('active');
+        })
+
+        // 切换名师视频
+        $('.video-container .btn-group-vertical .btn').click(function(){
+          $(this).siblings('.btn').removeClass('active');
+          $(this).addClass('active');
+          console.log(mySwiper3)
+          console.log(mySwiper3.slideTo)
+          mySwiper3.slideTo($(this).index(), 1000, false);
+        })
+
+    	})
+  	</script>
+  </body>
+</html>
