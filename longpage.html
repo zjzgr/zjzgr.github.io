@@ -1325,13 +1325,11 @@
         if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test($("input[name='phone']").val())) return alert('手机号格式不正确');
         var vals = $('#conditionForm').serializeArray();
         var res = {};
-        console.log(vals);
         for(var pa=0;pa<vals.length;pa++){
           res[vals[pa].name] = vals[pa].value
         }
         //TODO: 查询报名条件类型
         res.type = 'condition';
-        console.log(res);
         $.ajax({
           type: "get",
           dataType: "json",
@@ -1361,7 +1359,6 @@
         delete res.phone1;
         //TODO: 查询报名时间类型
         res.type = 'time';
-        console.log(res);
         $.ajax({
           type: "get",
           dataType: "json",
@@ -1456,8 +1453,6 @@
         $('.video-container .btn-group-vertical .btn').click(function(){
           $(this).siblings('.btn').removeClass('active');
           $(this).addClass('active');
-          console.log(mySwiper3)
-          console.log(mySwiper3.slideTo)
           mySwiper3.slideTo($(this).index(), 1000, false);
         })
 
