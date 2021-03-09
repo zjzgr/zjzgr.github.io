@@ -21,9 +21,9 @@
         /*background: linear-gradient(to left, #2791ff, #409EFF);*/
         overflow: hidden;
         padding: 20px 0 40px;
-          background-image: url('./images/banner.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
+        background-image: url('./images/banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       .banner h1{
         color: rgb(0, 255, 255);
@@ -48,10 +48,16 @@
         justify-content: space-around;
         margin-top: 20px;
       }
+      .king-kong-area > div{
+        width: 24.99%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
       .king-kong-area a{
         border-radius: 50%;
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
         margin: 10px 10px;
         color: #fff;
         font-weight: bold;
@@ -62,28 +68,28 @@
         padding: 0 10px;
         text-align: center;
       }
-      .king-kong-area > a:first-child{
+      .king-kong-area > div:first-child a{
         background: rgb(109, 158, 235);
       }
-      .king-kong-area >a:nth-child(2){
+      .king-kong-area > div:nth-child(2) a{
         background: rgb(3, 204, 204);
       }
-      .king-kong-area >a:nth-child(3){
+      .king-kong-area > div:nth-child(3) a{
         background: rgb(147, 196, 125);
       }
-      .king-kong-area >a:nth-child(4){
+      .king-kong-area > div:nth-child(4) a{
         background: rgb(95, 240, 240);
       }
-      .king-kong-area >a:nth-child(5){
+      .king-kong-area > div:nth-child(5) a{
         background: #e87676;
       }
-      .king-kong-area >a:nth-child(6){
+      .king-kong-area > div:nth-child(6) a{
         background: #f0a45f;
       }
-      .king-kong-area >a:nth-child(7){
+      .king-kong-area > div:nth-child(7) a{
         background: #bf90e8;
       }
-      .king-kong-area >a:last-child{
+      .king-kong-area > div:last-child a{
         background: #7f87b1;
       }
       .system-tab-pane{
@@ -256,7 +262,7 @@
         padding: 10px;
       }
       .focus-container h3{
-        color: rgb(60, 120, 216);
+        color: #1abc9c;
         font-size: 20px;
       }
       .focus-container .tablist{
@@ -273,7 +279,7 @@
         position: relative;
       }
       .focus-container .tablist .tab-item.active{
-        color: #5594f7; 
+        color: #1abc9c; 
       }
       .focus-container .tablist .tab-item.active:after{
         position: absolute;
@@ -284,7 +290,7 @@
         display: block;
         width: 70%;
         height: 2px;
-        background: #5594f7; 
+        background: #1abc9c; 
       }
       .focus-container .focus-tab-pane{
         display: none;
@@ -309,7 +315,7 @@
       .focus-container .focus-tab-pane.one .line .name{
         width: 56px;
         height: fit-content;
-        background: #5594f7; 
+        background: #1abc9c; 
         color: #fff; 
         font-size: 13px;
         padding: 7px 4px;
@@ -340,8 +346,13 @@
         margin-right: 8px;
         padding: 7px 0;
       }
+      .focus-container .focus-tab-pane.two .ques span{
+        position: relative;
+      }
       .focus-container .focus-tab-pane.two svg{
-        vertical-align: middle;
+        position: absolute;
+        right: -26px;
+        top: -5px;
       }
       .focus-container .focus-tab-pane.three table td{
         /*display: flex;*/
@@ -357,7 +368,7 @@
         padding: 10px 0px;
       }
       .material-container h3{
-        color: rgb(60, 120, 216);
+        color: #1abc9c;
         font-size: 20px;
       }
       .material-container .swiper-container{
@@ -397,7 +408,7 @@
         text-align: center;
       }
       .material-container .swiper-slide .right .title{
-        color: rgb(60, 120, 216);
+        color: #1abc9c;
         font-size: 16px;
       }
       .material-container .swiper-slide .right .info{
@@ -411,7 +422,7 @@
         padding: 10px;
       }
       .test-preparation-container h3{
-        color: rgb(60, 120, 216);
+        color: #1abc9c;
         font-size: 20px;
       }
       .test-preparation-container > p{
@@ -447,7 +458,7 @@
         padding: 10px;
       }
       .video-container h3{
-        color: rgb(60, 120, 216);
+        color: #1abc9c;
         font-size: 20px;
       }
       .video-container > p{
@@ -472,7 +483,7 @@
         border-right: none;
       }
       .video-container .btn-default:focus, .video-container .btn.active{
-        background-color: rgb(60, 120, 216);
+        background-color: #1abc9c;
         color: #fff;
       }
       .video-container .swiper-container{
@@ -483,9 +494,26 @@
         display: flex;
         align-items: center;
         background: #333;
+        position: relative;
       }
-      .video-container .swiper-container .swiper-slide img{
+      .video-container .swiper-container .swiper-slide img:not(.play){
         width: 100%;
+      }
+      .video-container .swiper-container .swiper-slide img.play{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: calc(50% - 25px);
+        right: 0;
+      }
+      .video-container .try-listen .form-phone{
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 80%;
+        margin: 0 auto;
+      }
+      .video-container .try-listen .form-control{
+        width: 214px;
       }
       .video-container .try-listen h5{
         font-size: 17px;
@@ -505,7 +533,7 @@
         flex-shrink: 0;
       }
       .why-container h3{
-    color: rgb(60, 120, 216);
+    color: #1abc9c;
         font-size: 20px;
         line-height: 30px;
       }
@@ -559,26 +587,31 @@
         border-radius: 5px;
         border-top-left-radius: 0px;
         padding: 8px;
-        height: 140px;
         color: #616161;
       }
       .why-container .step-list .step-item:first-child .info{
         border: 1px solid rgb(109, 158, 235);
+        height: 122px;
       }
       .why-container .step-list .step-item:nth-child(2) .info{
         border: 1px solid rgb(3, 204, 204);
+        height: 122px;
       }
       .why-container .step-list .step-item:nth-child(3) .info{
         border: 1px solid rgb(147, 196, 125);
+        height: 120px;
       }
       .why-container .step-list .step-item:nth-child(4) .info{
         border: 1px solid rgb(95, 240, 240);
+        height: 120px;
       }
       .why-container .step-list .step-item:nth-child(5) .info{
         border: 1px solid #e87676;
+        height: 140px;
       }
       .why-container .step-list .step-item:last-child .info{
         border: 1px solid #f0a45f;
+        height: 140px;
       }
       .modal-backgroud{
         position: fixed;
@@ -636,14 +669,14 @@
         </div>
       </div>
       <div class="king-kong-area">
-        <a href="#reform-container" class="king-kong-item">政策改革</a>
-        <a href="#system-condition" class="king-kong-item">报考条件</a>
-        <a href="#system-time" class="king-kong-item">报考时间</a>
-        <a class="king-kong-item" href="javascript: void(0);" onclick="showRgisterForm()">报考入口</a>
-        <a class="king-kong-item" href="javascript: void(0);" onclick="showRgisterForm()">报考流程</a>
-        <a href="#focus-container" class="focus-container">考试时间</a>
-        <a class="king-kong-item" href="javascript: void(0);" onclick="showRgisterForm()">考试科目</a>
-        <a href="#test-preparation-container" class="king-kong-item">真题试题</a>
+        <div><a href="#reform-container" class="king-kong-item">政策改革</a></div>
+        <div><a href="#system-condition" class="king-kong-item">报考条件</a></div>
+        <div><a href="#system-time" class="king-kong-item">报考时间</a></div>
+        <div><a class="king-kong-item" href="javascript: void(0);" onclick="showRgisterForm()">报考入口</a></div>
+        <div><a class="king-kong-item" href="javascript: void(0);" onclick="showRgisterForm()">报考流程</a></div>
+        <div><a href="#focus-container" class="focus-container">考试时间</a></div>
+        <div><a class="king-kong-item" href="javascript: void(0);" onclick="showRgisterForm()">考试科目</a></div>
+        <div><a href="#test-preparation-container" class="king-kong-item">真题试题</a></div>
       </div>
       <div class="system-tab-pane system-condition" name="system-condition" id="system-condition" style="margin-top: 40px">
         <h3 class="text-center">2021年执业药师报考条件</h3>
@@ -835,44 +868,44 @@
           <div class="focus-tab-pane two">
             <div class="line">
               <div class="ques">
-                1.2021年中专学历可以报名执业药师吗？（已回答）
+                1.2021年中专学历可以报名执业药师吗？<span style="display: inline-block;">(已回答)</span>
               </div>
               <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
             </div>
             <div class="line">
               <div class="ques">
-                2.2021年执业药师需要提供社保的省市有哪些?时间不够怎么办？（已回答）
-                <svg t="1615215942916" class="icon" viewBox="0 0 1609 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8462" width="22" height="22"><path d="M731.428571 292.571429h146.285715v219.428571h-146.285715z" fill="#FF6600" p-id="8463"></path><path d="M0 0v1024l219.428571-219.428571h1389.714286V0H0z m585.142857 585.142857H512V438.857143H292.571429v146.285714H219.428571V219.428571h73.142858v146.285715h219.428571V219.428571h73.142857v365.714286z m365.714286 0H658.285714V219.428571h292.571429v365.714286z m438.857143-292.571428h-146.285715v292.571428h-73.142857V292.571429h-146.285714V219.428571h365.714286v73.142858z" fill="#FF6600" p-id="8464"></path></svg>
+                2.2021年执业药师需要提供社保的省市有哪些?时间不够怎么办？<span style="display: inline-block;">(已回答)
+                <svg t="1615215942916" class="icon" viewBox="0 0 1609 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8462" width="22" height="22"><path d="M731.428571 292.571429h146.285715v219.428571h-146.285715z" fill="#FF6600" p-id="8463"></path><path d="M0 0v1024l219.428571-219.428571h1389.714286V0H0z m585.142857 585.142857H512V438.857143H292.571429v146.285714H219.428571V219.428571h73.142858v146.285715h219.428571V219.428571h73.142857v365.714286z m365.714286 0H658.285714V219.428571h292.571429v365.714286z m438.857143-292.571428h-146.285715v292.571428h-73.142857V292.571429h-146.285714V219.428571h365.714286v73.142858z" fill="#FF6600" p-id="8464"></path></svg></span>
               </div>
               <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
             </div>
             <div class="line">
               <div class="ques">
-                3.2021年哪些专业不能报考执业药师？（已回答）
-                <svg t="1615215942916" class="icon" viewBox="0 0 1609 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8462" width="22" height="22"><path d="M731.428571 292.571429h146.285715v219.428571h-146.285715z" fill="#FF6600" p-id="8463"></path><path d="M0 0v1024l219.428571-219.428571h1389.714286V0H0z m585.142857 585.142857H512V438.857143H292.571429v146.285714H219.428571V219.428571h73.142858v146.285715h219.428571V219.428571h73.142857v365.714286z m365.714286 0H658.285714V219.428571h292.571429v365.714286z m438.857143-292.571428h-146.285715v292.571428h-73.142857V292.571429h-146.285714V219.428571h365.714286v73.142858z" fill="#FF6600" p-id="8464"></path></svg>
+                3.2021年哪些专业不能报考执业药师？<span style="display: inline-block;">(已回答)
+                <svg t="1615215942916" class="icon" viewBox="0 0 1609 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8462" width="22" height="22"><path d="M731.428571 292.571429h146.285715v219.428571h-146.285715z" fill="#FF6600" p-id="8463"></path><path d="M0 0v1024l219.428571-219.428571h1389.714286V0H0z m585.142857 585.142857H512V438.857143H292.571429v146.285714H219.428571V219.428571h73.142858v146.285715h219.428571V219.428571h73.142857v365.714286z m365.714286 0H658.285714V219.428571h292.571429v365.714286z m438.857143-292.571428h-146.285715v292.571428h-73.142857V292.571429h-146.285714V219.428571h365.714286v73.142858z" fill="#FF6600" p-id="8464"></path></svg></span>
               </div>
               <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
             </div>
             <div class="line">
               <div class="ques">
-                4.工作年限具体怎么算？实习年限算吗？（已回答）
-                <svg t="1615215942916" class="icon" viewBox="0 0 1609 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8462" width="22" height="22"><path d="M731.428571 292.571429h146.285715v219.428571h-146.285715z" fill="#FF6600" p-id="8463"></path><path d="M0 0v1024l219.428571-219.428571h1389.714286V0H0z m585.142857 585.142857H512V438.857143H292.571429v146.285714H219.428571V219.428571h73.142858v146.285715h219.428571V219.428571h73.142857v365.714286z m365.714286 0H658.285714V219.428571h292.571429v365.714286z m438.857143-292.571428h-146.285715v292.571428h-73.142857V292.571429h-146.285714V219.428571h365.714286v73.142858z" fill="#FF6600" p-id="8464"></path></svg>
+                4.工作年限具体怎么算？实习年限算吗？<span style="display: inline-block;">(已回答)
+                <svg t="1615215942916" class="icon" viewBox="0 0 1609 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8462" width="22" height="22"><path d="M731.428571 292.571429h146.285715v219.428571h-146.285715z" fill="#FF6600" p-id="8463"></path><path d="M0 0v1024l219.428571-219.428571h1389.714286V0H0z m585.142857 585.142857H512V438.857143H292.571429v146.285714H219.428571V219.428571h73.142858v146.285715h219.428571V219.428571h73.142857v365.714286z m365.714286 0H658.285714V219.428571h292.571429v365.714286z m438.857143-292.571428h-146.285715v292.571428h-73.142857V292.571429h-146.285714V219.428571h365.714286v73.142858z" fill="#FF6600" p-id="8464"></path></svg></span>
               </div>
               <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
             </div>
             <div class="line">
-              <div class="ques">5.药剂师和执业药师有什么区别？（已回答）</div>
+              <div class="ques">5.药剂师和执业药师有什么区别？<span style="display: inline-block;">(已回答)</span></div>
               <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
             </div>
             <div class="line">
               <div class="ques">
-                6.2021年执业药师免试条件是什么？（已回答）
-                <svg t="1615215942916" class="icon" viewBox="0 0 1609 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8462" width="22" height="22"><path d="M731.428571 292.571429h146.285715v219.428571h-146.285715z" fill="#FF6600" p-id="8463"></path><path d="M0 0v1024l219.428571-219.428571h1389.714286V0H0z m585.142857 585.142857H512V438.857143H292.571429v146.285714H219.428571V219.428571h73.142858v146.285715h219.428571V219.428571h73.142857v365.714286z m365.714286 0H658.285714V219.428571h292.571429v365.714286z m438.857143-292.571428h-146.285715v292.571428h-73.142857V292.571429h-146.285714V219.428571h365.714286v73.142858z" fill="#FF6600" p-id="8464"></path></svg>
+                6.2021年执业药师免试条件是什么？<span style="display: inline-block;">(已回答)
+                <svg t="1615215942916" class="icon" viewBox="0 0 1609 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8462" width="22" height="22"><path d="M731.428571 292.571429h146.285715v219.428571h-146.285715z" fill="#FF6600" p-id="8463"></path><path d="M0 0v1024l219.428571-219.428571h1389.714286V0H0z m585.142857 585.142857H512V438.857143H292.571429v146.285714H219.428571V219.428571h73.142858v146.285715h219.428571V219.428571h73.142857v365.714286z m365.714286 0H658.285714V219.428571h292.571429v365.714286z m438.857143-292.571428h-146.285715v292.571428h-73.142857V292.571429h-146.285714V219.428571h365.714286v73.142858z" fill="#FF6600" p-id="8464"></path></svg></span>
               </div>
               <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
             </div>
             <div class="line">
-              <div class="ques">7.2021年执业药师的报考流程是什么？需要注意哪些？（已回答）</div>
+              <div class="ques">7.2021年执业药师的报考流程是什么？需要注意哪些？<span style="display: inline-block;">(已回答)</span></div>
               <button type="button" class="btn btn-info btn-sm" onclick="showRgisterForm()">点击查看</button>
             </div>
           </div>
@@ -1169,24 +1202,31 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./images/video1.jpg" />
+            <img class="play" src="./images/play.png" />
           </div>
           <div class="swiper-slide">
             <img src="./images/video2.jpg" />
+            <img class="play" src="./images/play.png" />
           </div>
           <div class="swiper-slide">
             <img src="./images/video3.jpg" />
+            <img class="play" src="./images/play.png" />
           </div>
           <div class="swiper-slide">
             <img src="./images/video4.jpg" />
+            <img class="play" src="./images/play.png" />
           </div>
           <div class="swiper-slide">
             <img src="./images/video5.jpg" />
+            <img class="play" src="./images/play.png" />
           </div>
           <div class="swiper-slide">
             <img src="./images/video6.jpg" />
+            <img class="play" src="./images/play.png" />
           </div>
           <div class="swiper-slide">
             <img src="./images/video7.jpg" />
+            <img class="play" src="./images/play.png" />
           </div>
         </div>
       </div>
