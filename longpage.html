@@ -333,8 +333,11 @@
       .focus-container .focus-tab-pane.one .line .word span{
         color: #e84444;
       }
-      .focus-container .focus-tab-pane.two, .focus-container .focus-tab-pane.three{
+      .focus-container .focus-tab-pane.two{
         padding: 10px;
+      }
+      .focus-container .focus-tab-pane.three{
+        padding: 0px;
       }
       .focus-container .focus-tab-pane.two .line{
         display: flex;
@@ -354,10 +357,8 @@
         right: -26px;
         top: -5px;
       }
-      .focus-container .focus-tab-pane.three table td{
-        /*display: flex;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
+      .focus-container .focus-tab-pane.three table tr > td:nth-child(2n+2){
+        width: 70px;
       }
       .focus-container .focus-tab-pane.three .notice-wrap{
         display: flex;
@@ -941,7 +942,7 @@
                 </td>
               </tr>
               <tr>
-                <td>药事管理与法规</td>
+                <td>药事管理</td>
                 <td>9：00-11:30</td>
                 <td>120分</td>
                 <td>
@@ -952,7 +953,7 @@
                 </td>
               </tr>
               <tr>
-                <td>综合知识技</td>
+                <td>综合知识技能</td>
                 <td>14：00-16：30</td>
                 <td>120分</td>
                 <td>
