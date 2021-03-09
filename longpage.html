@@ -1372,6 +1372,10 @@
         var mySwiper3 = new Swiper('.video-container .swiper-container',{
           direction: 'vertical',
           speed: 500,
+          onSlideChangeEnd: function(swiper) {
+            $('.video-container .btn-group-vertical .btn').removeClass('active');
+            $('.video-container .btn-group-vertical .btn:nth-child('+(swiper.activeIndex + 1)+')').addClass('active');
+          }
         })
 
         // 固定时间增长查询人数
