@@ -490,6 +490,7 @@
       .video-container .swiper-container{
         flex: 1;
         height: 232px;
+        background: #333;
       }
       .video-container .swiper-container .swiper-slide{
         display: flex;
@@ -1398,6 +1399,7 @@
           autoplay : 3000,
           loop: true
         })
+        mySwiper1.detachEvents();
 
         var mySwiper2 = new Swiper('.material-container .swiper-container',{
           speed: 700,
