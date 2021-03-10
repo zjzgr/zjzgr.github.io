@@ -163,7 +163,7 @@
         display: inline-block;
         width: 80px;
         text-align: center;
-        color: rgb(0,170,255);
+        color: #1abc9c;
         font-weight: bold;
       }
       .form-phone .form-control, .form-province .form-control{
@@ -208,15 +208,15 @@
         align-items: center;
       }
       .province-list .province-item span{
-        color: rgb(0,170,255);
-        border: 1px solid rgba(0,170,255, 0.3);
+        color: #1abc9c;
+        border: 1px solid #1abc9c;
         width: 60px;
         text-align: center;
         padding: 5px 0;
         border-radius: 5px;
       }
       .province-list .province-item.active span{
-        background: rgba(0,170,255, 0.6);
+        background: #1abc9c;
         color: #fff;
       }
       .reform-container{
@@ -316,8 +316,9 @@
       .focus-container .focus-tab-pane.one .line .name{
         width: 56px;
         height: fit-content;
-        background: #1abc9c; 
-        color: #fff; 
+        background: #fff; 
+        color: #1abc9c;
+        border: 1px solid #1abc9c;
         font-size: 13px;
         padding: 7px 4px;
         display: flex;
@@ -455,6 +456,9 @@
       }
       .test-preparation-container .data-list .line .right svg:last-of-type{
         margin-left: 10px;
+      }
+      .pagination>li>a, .pagination>li>span{
+        color: #1abc9c;
       }
       .video-container {
         padding: 10px;
@@ -610,11 +614,11 @@
       }
       .why-container .step-list .step-item:nth-child(5) .info{
         border: 1px solid #e87676;
-        height: 140px;
+        height: 148px;
       }
       .why-container .step-list .step-item:last-child .info{
         border: 1px solid #f0a45f;
-        height: 140px;
+        height: 148px;
       }
       .modal-backgroud{
         position: fixed;
@@ -727,7 +731,7 @@
             <div class="form-phone">
               <input class="form-control" type="text" name="phone" placeholder="请输入您的手机号">
             </div>
-            <button type="button" class="search-res btn-primary btn btn-default" onclick="submitConditionForm()">查看审核结果 >></button>
+            <button type="button" class="search-res btn-success btn btn-default" onclick="submitConditionForm()">查看审核结果 >></button>
         </form>
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -799,8 +803,8 @@
             <input class="form-control hide" type="text" name="province">
             <input class="form-control" type="text" name="phone1" placeholder="请输入您的手机号">
           </div>
-<!--           <button type="button" class="search-res btn-primary btn btn-default" onclick="submitTimeForm()">获取报名时间 >></button> -->
-          <button type="button" class="search-res btn-primary btn btn-default" onclick="showRgisterForm()">获取报名时间 >></button>
+<!--           <button type="button" class="search-res btn-success btn btn-default" onclick="submitTimeForm()">获取报名时间 >></button> -->
+          <button type="button" class="search-res btn-success btn btn-default" onclick="showRgisterForm()">获取报名时间 >></button>
         </form>
         <p class="text-center" style="margin: 15px">*注：查询结果以短信形式发送至您的手机上，请注意查收</p>
       </div>
@@ -967,8 +971,8 @@
               </tr>
             </table>
             <div class="notice-wrap">
-              <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">查看考试时间</button>
-              <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">了解历年通过率和易错点</button>
+              <button type="button" class="btn btn-success btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">查看考试时间</button>
+              <button type="button" class="btn btn-success btn-sm" onclick="showRgisterForm()">了解历年通过率和易错点</button>
             </div>
             <p style="margin: 15px 0px 10px">*温馨提示：考试成绩是连续4年一个周期，考生须在连续的4年内通过所有考试，方可获取证书</p>
           </div>
@@ -987,8 +991,8 @@
                 <div class="info">全国执业药师资格考试用书</div>
                 <div class="info">早领教材早备考</div>
                   <div class="notice-wrap">
-                    <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
-                    <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+                    <button type="button" class="btn btn-success btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+                    <button type="button" class="btn btn-success btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
                   </div>
               </div>
             </div>
@@ -1001,8 +1005,8 @@
                 <div class="info">全国执业药师资格考试用书</div>
                 <div class="info">早领教材早备考</div>
                   <div class="notice-wrap">
-                    <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
-                    <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+                    <button type="button" class="btn btn-success btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+                    <button type="button" class="btn btn-success btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
                   </div>
               </div>
             </div>
@@ -1015,8 +1019,8 @@
                 <div class="info">全国执业药师资格考试用书</div>
                 <div class="info">早领教材早备考</div>
                   <div class="notice-wrap">
-                    <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
-                    <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+                    <button type="button" class="btn btn-success btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+                    <button type="button" class="btn btn-success btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
                   </div>
               </div>
             </div>
@@ -1029,8 +1033,8 @@
                 <div class="info">全国执业药师资格考试用书</div>
                 <div class="info">早领教材早备考</div>
                   <div class="notice-wrap">
-                    <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
-                    <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+                    <button type="button" class="btn btn-success btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+                    <button type="button" class="btn btn-success btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
                   </div>
               </div>
             </div>
@@ -1043,8 +1047,8 @@
                 <div class="info">全国执业药师资格考试用书</div>
                 <div class="info">早领教材早备考</div>
                   <div class="notice-wrap">
-                    <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
-                    <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+                    <button type="button" class="btn btn-success btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+                    <button type="button" class="btn btn-success btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
                   </div>
               </div>
             </div>
@@ -1057,8 +1061,8 @@
                 <div class="info">全国执业药师资格考试用书</div>
                 <div class="info">早领教材早备考</div>
                   <div class="notice-wrap">
-                    <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
-                    <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+                    <button type="button" class="btn btn-success btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+                    <button type="button" class="btn btn-success btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
                   </div>
               </div>
             </div>
@@ -1071,8 +1075,8 @@
                 <div class="info">全国执业药师资格考试用书</div>
                 <div class="info">早领教材早备考</div>
                   <div class="notice-wrap">
-                    <button type="button" class="btn btn-primary btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
-                    <button type="button" class="btn btn-primary btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
+                    <button type="button" class="btn btn-success btn-sm" style="margin-right: 15px" onclick="showRgisterForm()">电子版下载</button>
+                    <button type="button" class="btn btn-success btn-sm" onclick="showRgisterForm()">邮寄纸质版</button>
                   </div>
               </div>
             </div>
@@ -1252,7 +1256,7 @@
           <div class="form-phone">
               <input class="form-control try-listen-phone" type="text" placeholder="请输入您的手机号">
           </div>
-          <button type="button" class="search-res btn-primary btn btn-default" onclick="submitTryListenForm()">获取课程试听 >></button>
+          <button type="button" class="search-res btn-success btn btn-default" onclick="submitTryListenForm()">获取课程试听 >></button>
         </div>
       </div>
       <div class="why-container">
@@ -1300,7 +1304,7 @@
               <input class="form-control input-password" type="password" placeholder="请输入密码" />
             </div>
             <div class="line" style="margin: 25px 0 15px">
-              <button type="button" class="btn-primary btn btn-default" onclick="submitRegisterForm()">立即注册</button>
+              <button type="button" class="btn-success btn btn-default" onclick="submitRegisterForm()">立即注册</button>
             </div>
           </div>
         </div>
