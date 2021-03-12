@@ -21,9 +21,16 @@
         /*background: linear-gradient(to left, #2791ff, #409EFF);*/
         overflow: hidden;
         padding: 20px 0 40px;
-        background-image: url('./images/banner1.jpg');
+        background-image: url('./images/banner2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
+      }
+      .banner .logo{
+      	position: absolute;
+      	width: 30px;
+      	top: 15px;
+      	left: 15px;
       }
       .banner h1{
         /*color: rgb(0, 255, 255);*/
@@ -220,11 +227,15 @@
         color: #fff;
       }
       .reform-container{
-        background-image: url('./images/banner.jpg');
+        background-image: url('./images/banner3.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
       }
-      .reform-container{
+      .reform-container > div{
+      	width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.5);
         padding: 10px 0;
       }
       .reform-container h3{
@@ -263,7 +274,7 @@
         padding: 10px;
       }
       .focus-container h3{
-        color: #1abc9c;
+        color: #000;
         font-size: 20px;
       }
       .focus-container .tablist{
@@ -314,7 +325,7 @@
         height: 100%;
       }
       .focus-container .focus-tab-pane.one .line .name{
-        width: 56px;
+        width: 48px;
         height: fit-content;
         background: #fff; 
         color: #1abc9c;
@@ -353,6 +364,7 @@
       }
       .focus-container .focus-tab-pane.two .ques span{
         position: relative;
+        margin-right: 15px;
       }
       .focus-container .focus-tab-pane.two svg{
         position: absolute;
@@ -371,7 +383,7 @@
         padding: 10px 0px;
       }
       .material-container h3{
-        color: #1abc9c;
+        color: #000;
         font-size: 20px;
       }
       .material-container .swiper-container{
@@ -425,7 +437,7 @@
         padding: 10px;
       }
       .test-preparation-container h3{
-        color: #1abc9c;
+        color: #000;
         font-size: 20px;
       }
       .test-preparation-container > p{
@@ -464,7 +476,7 @@
         padding: 10px;
       }
       .video-container h3{
-        color: #1abc9c;
+        color: #000;
         font-size: 20px;
       }
       .video-container > p{
@@ -516,8 +528,9 @@
       .video-container .try-listen .form-phone{
         flex-direction: row;
         justify-content: flex-end;
-        width: 80%;
+        /*width: 80%;*/
         margin: 0 auto;
+        padding-right: 50px;
       }
       .video-container .try-listen .form-control{
         width: 214px;
@@ -532,15 +545,17 @@
       .video-container .try-listen .select-wrap{
         display: flex;
         align-items: center;
-        width: 80%;
+        /*width: 80%;*/
         margin: 0 auto 20px;
+        padding-right: 50px;
+        justify-content: flex-end;
       }
       .video-container .try-listen .select-wrap span{
         width: 70px;
         flex-shrink: 0;
       }
       .why-container h3{
-    color: #1abc9c;
+    color: #000;
         font-size: 20px;
         line-height: 30px;
       }
@@ -674,11 +689,12 @@
           <div class="tag text-center">含金量增加</div>
           <div class="tag text-center">开药店必备</div>
         </div>
+        <img class="logo" src="./images/logo.png" />
       </div>
       <div class="king-kong-area">
         <div><a href="#reform-container" class="king-kong-item">政策改革</a></div>
         <div><a href="#system-condition" class="king-kong-item">报考条件</a></div>
-        <div><a href="#system-time" class="king-kong-item">报考时间</a></div>
+        <div><a href="#system-time" class="king-kong-item">报名时间</a></div>
         <div><a class="king-kong-item" href="javascript: void(0);" onclick="showRgisterForm()">报考入口</a></div>
         <div><a class="king-kong-item" href="javascript: void(0);" onclick="showRgisterForm()">报考流程</a></div>
         <div><a href="#focus-container" class="focus-container">考试时间</a></div>
@@ -722,7 +738,7 @@
           <div class="form-group">
               <div class="label-text">4.请选择您的毕业年限</div>
             <div class="radio-group">
-              <div class="radio radio-inline"><label><input type="radio" name="year" value="应届生毕业生/在校生"> 应届生毕业生/在校生</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="year" value="应届生毕业生/在校生"> 1年及1年以下</label></div>
               <div class="radio radio-inline"><label><input type="radio" name="year" value="1-3年"> 1-3年</label></div>
               <div class="radio radio-inline"><label><input type="radio" name="year" value="3-5年"> 3-5年</label></div>
               <div class="radio radio-inline"><label><input type="radio" name="year" value="5年以上"> 5年以上</label></div>
@@ -737,23 +753,23 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <svg t="1615193357249" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1058" width="18" height="18"><path d="M919.3 551.7H757.4c-22.4 0-40.7-18.2-40.7-40.6s18.3-40.6 40.7-40.6h161.9c22.4 0 40.7 18.2 40.7 40.6s-18.3 40.6-40.7 40.6zM902.4 180.6L788 294.8c-15.8 15.8-41.7 15.8-57.6 0-15.9-15.8-15.8-41.6 0-57.4l114.4-114.2c15.8-15.8 41.7-15.8 57.6 0s15.9 41.6 0 57.4zM732.2 731.4c15.8-15.8 41.7-15.8 57.6 0l114.4 114.2c15.8 15.8 15.8 41.6 0 57.4-15.8 15.8-41.7 15.8-57.6 0L732.2 788.8c-15.9-15.8-15.9-41.6 0-57.4zM608.2 112c-4.6 0-9.4 1.2-13.8 3.9L232 344.5H116.5c-28.9 0-52.5 23.6-52.5 52.4v230.3c0 28.8 23.6 52.4 52.5 52.4H232l362.5 228.5c4.4 2.7 9.1 3.9 13.7 3.9 13.7 0 26.3-10.8 26.3-26.2V138.2c0-15.4-12.6-26.2-26.3-26.2zM195.4 598.6c0 8.8-7.2 16-16 16h-40.3c-8.8 0-16-7.2-16-16v-164c0-8.8 7.2-16 16-16h40.3c8.8 0 16 7.2 16 16v164z m368.7 145.3c0 27.5-30.3 44.3-53.7 29.9L279 619.8l-0.4-0.2c-10.6-6.3-17.2-17.8-17.2-30.2V434.7c0-12.4 6.5-23.8 17.2-30.1l0.4-0.3 231.4-154c23.5-14.4 53.7 2.4 53.7 29.9v463.7z" p-id="1059" fill="#df6e5f"></path></svg>
-              <span>133*****8103用户 15分钟前测试满足条件</span>
+              <span>133*****8103用户 15分钟前查询满足条件</span>
             </div>
             <div class="swiper-slide">
               <svg t="1615193357249" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1058" width="18" height="18"><path d="M919.3 551.7H757.4c-22.4 0-40.7-18.2-40.7-40.6s18.3-40.6 40.7-40.6h161.9c22.4 0 40.7 18.2 40.7 40.6s-18.3 40.6-40.7 40.6zM902.4 180.6L788 294.8c-15.8 15.8-41.7 15.8-57.6 0-15.9-15.8-15.8-41.6 0-57.4l114.4-114.2c15.8-15.8 41.7-15.8 57.6 0s15.9 41.6 0 57.4zM732.2 731.4c15.8-15.8 41.7-15.8 57.6 0l114.4 114.2c15.8 15.8 15.8 41.6 0 57.4-15.8 15.8-41.7 15.8-57.6 0L732.2 788.8c-15.9-15.8-15.9-41.6 0-57.4zM608.2 112c-4.6 0-9.4 1.2-13.8 3.9L232 344.5H116.5c-28.9 0-52.5 23.6-52.5 52.4v230.3c0 28.8 23.6 52.4 52.5 52.4H232l362.5 228.5c4.4 2.7 9.1 3.9 13.7 3.9 13.7 0 26.3-10.8 26.3-26.2V138.2c0-15.4-12.6-26.2-26.3-26.2zM195.4 598.6c0 8.8-7.2 16-16 16h-40.3c-8.8 0-16-7.2-16-16v-164c0-8.8 7.2-16 16-16h40.3c8.8 0 16 7.2 16 16v164z m368.7 145.3c0 27.5-30.3 44.3-53.7 29.9L279 619.8l-0.4-0.2c-10.6-6.3-17.2-17.8-17.2-30.2V434.7c0-12.4 6.5-23.8 17.2-30.1l0.4-0.3 231.4-154c23.5-14.4 53.7 2.4 53.7 29.9v463.7z" p-id="1059" fill="#df6e5f"></path></svg>
-              <span>185*****0247用户 10分钟前测试满足条件</span>
+              <span>185*****0247用户 10分钟前查询满足条件</span>
             </div>
             <div class="swiper-slide">
               <svg t="1615193357249" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1058" width="18" height="18"><path d="M919.3 551.7H757.4c-22.4 0-40.7-18.2-40.7-40.6s18.3-40.6 40.7-40.6h161.9c22.4 0 40.7 18.2 40.7 40.6s-18.3 40.6-40.7 40.6zM902.4 180.6L788 294.8c-15.8 15.8-41.7 15.8-57.6 0-15.9-15.8-15.8-41.6 0-57.4l114.4-114.2c15.8-15.8 41.7-15.8 57.6 0s15.9 41.6 0 57.4zM732.2 731.4c15.8-15.8 41.7-15.8 57.6 0l114.4 114.2c15.8 15.8 15.8 41.6 0 57.4-15.8 15.8-41.7 15.8-57.6 0L732.2 788.8c-15.9-15.8-15.9-41.6 0-57.4zM608.2 112c-4.6 0-9.4 1.2-13.8 3.9L232 344.5H116.5c-28.9 0-52.5 23.6-52.5 52.4v230.3c0 28.8 23.6 52.4 52.5 52.4H232l362.5 228.5c4.4 2.7 9.1 3.9 13.7 3.9 13.7 0 26.3-10.8 26.3-26.2V138.2c0-15.4-12.6-26.2-26.3-26.2zM195.4 598.6c0 8.8-7.2 16-16 16h-40.3c-8.8 0-16-7.2-16-16v-164c0-8.8 7.2-16 16-16h40.3c8.8 0 16 7.2 16 16v164z m368.7 145.3c0 27.5-30.3 44.3-53.7 29.9L279 619.8l-0.4-0.2c-10.6-6.3-17.2-17.8-17.2-30.2V434.7c0-12.4 6.5-23.8 17.2-30.1l0.4-0.3 231.4-154c23.5-14.4 53.7 2.4 53.7 29.9v463.7z" p-id="1059" fill="#df6e5f"></path></svg>
-              <span>130*****3136用户 5分钟前测试不满足条件</span>
+              <span>130*****3136用户 5分钟前查询不满足条件</span>
             </div>
             <div class="swiper-slide">
               <svg t="1615193357249" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1058" width="18" height="18"><path d="M919.3 551.7H757.4c-22.4 0-40.7-18.2-40.7-40.6s18.3-40.6 40.7-40.6h161.9c22.4 0 40.7 18.2 40.7 40.6s-18.3 40.6-40.7 40.6zM902.4 180.6L788 294.8c-15.8 15.8-41.7 15.8-57.6 0-15.9-15.8-15.8-41.6 0-57.4l114.4-114.2c15.8-15.8 41.7-15.8 57.6 0s15.9 41.6 0 57.4zM732.2 731.4c15.8-15.8 41.7-15.8 57.6 0l114.4 114.2c15.8 15.8 15.8 41.6 0 57.4-15.8 15.8-41.7 15.8-57.6 0L732.2 788.8c-15.9-15.8-15.9-41.6 0-57.4zM608.2 112c-4.6 0-9.4 1.2-13.8 3.9L232 344.5H116.5c-28.9 0-52.5 23.6-52.5 52.4v230.3c0 28.8 23.6 52.4 52.5 52.4H232l362.5 228.5c4.4 2.7 9.1 3.9 13.7 3.9 13.7 0 26.3-10.8 26.3-26.2V138.2c0-15.4-12.6-26.2-26.3-26.2zM195.4 598.6c0 8.8-7.2 16-16 16h-40.3c-8.8 0-16-7.2-16-16v-164c0-8.8 7.2-16 16-16h40.3c8.8 0 16 7.2 16 16v164z m368.7 145.3c0 27.5-30.3 44.3-53.7 29.9L279 619.8l-0.4-0.2c-10.6-6.3-17.2-17.8-17.2-30.2V434.7c0-12.4 6.5-23.8 17.2-30.1l0.4-0.3 231.4-154c23.5-14.4 53.7 2.4 53.7 29.9v463.7z" p-id="1059" fill="#df6e5f"></path></svg>
-              <span>180*****6163用户 3分钟前测试满足条件</span>
+              <span>180*****6163用户 3分钟前查询满足条件</span>
             </div>
             <div class="swiper-slide">
               <svg t="1615193357249" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1058" width="18" height="18"><path d="M919.3 551.7H757.4c-22.4 0-40.7-18.2-40.7-40.6s18.3-40.6 40.7-40.6h161.9c22.4 0 40.7 18.2 40.7 40.6s-18.3 40.6-40.7 40.6zM902.4 180.6L788 294.8c-15.8 15.8-41.7 15.8-57.6 0-15.9-15.8-15.8-41.6 0-57.4l114.4-114.2c15.8-15.8 41.7-15.8 57.6 0s15.9 41.6 0 57.4zM732.2 731.4c15.8-15.8 41.7-15.8 57.6 0l114.4 114.2c15.8 15.8 15.8 41.6 0 57.4-15.8 15.8-41.7 15.8-57.6 0L732.2 788.8c-15.9-15.8-15.9-41.6 0-57.4zM608.2 112c-4.6 0-9.4 1.2-13.8 3.9L232 344.5H116.5c-28.9 0-52.5 23.6-52.5 52.4v230.3c0 28.8 23.6 52.4 52.5 52.4H232l362.5 228.5c4.4 2.7 9.1 3.9 13.7 3.9 13.7 0 26.3-10.8 26.3-26.2V138.2c0-15.4-12.6-26.2-26.3-26.2zM195.4 598.6c0 8.8-7.2 16-16 16h-40.3c-8.8 0-16-7.2-16-16v-164c0-8.8 7.2-16 16-16h40.3c8.8 0 16 7.2 16 16v164z m368.7 145.3c0 27.5-30.3 44.3-53.7 29.9L279 619.8l-0.4-0.2c-10.6-6.3-17.2-17.8-17.2-30.2V434.7c0-12.4 6.5-23.8 17.2-30.1l0.4-0.3 231.4-154c23.5-14.4 53.7 2.4 53.7 29.9v463.7z" p-id="1059" fill="#df6e5f"></path></svg>
-              <span>150*****5279用户 1分钟前测试不满足条件</span>
+              <span>150*****5279用户 1分钟前查询不满足条件</span>
             </div>
           </div>
         </div>
@@ -806,33 +822,35 @@
 <!--           <button type="button" class="search-res btn-success btn btn-default" onclick="submitTimeForm()">获取报名时间 >></button> -->
           <button type="button" class="search-res btn-success btn btn-default" onclick="showRgisterForm()">获取报名时间 >></button>
         </form>
-        <p class="text-center" style="margin: 15px">*注：查询结果以短信形式发送至您的手机上，请注意查收</p>
+        <p class="text-center" style="margin: 15px 0 30px;font-size: 12px">*注：查询结果以短信形式发送至您的手机上，请注意查收</p>
       </div>
       <div class="reform-container" name="reform-container" id="reform-container">
-        <h3 class="text-center">2021年执业药师政策改革（新）</h3>
-        <div class="content">
-          <div class="item">
-            <div class="left">学历报考改革</div>
-            <div class="right">
-              2021年人事部、国家医药管理局对执业药师报考实施新规：中专学历的考生将...
-              <span onclick="showRgisterForm()">查询详情&gt;&gt;</span>
-            </div>
-          </div>
-          <div class="item">
-            <div class="left">考试内容改革</div>
-            <div class="right">
-              2021年执业药师相比去年考试内容更偏向与临床案例，更改了510余处，分别是...
-              <span onclick="showRgisterForm()">查询详情&gt;&gt;</span>
-            </div>
-          </div>
-          <div class="item">
-            <div class="left">社保需求改革</div>
-            <div class="right">
-              2021年对执业药师报名考试社保问题进行调整，新增以下几个省份有：四川...
-              <span onclick="showRgisterForm()">查询详情&gt;&gt;</span>
-            </div>
-          </div>
-        </div>
+      	<div>
+	        <h3 class="text-center">2021年执业药师政策改革（新）</h3>
+	        <div class="content">
+	          <div class="item">
+	            <div class="left">学历报考改革</div>
+	            <div class="right">
+	              2021年人事部、国家医药管理局对执业药师报考实施新规：中专学历的考生将...
+	              <span onclick="showRgisterForm()">查询详情&gt;&gt;</span>
+	            </div>
+	          </div>
+	          <div class="item">
+	            <div class="left">考试内容改革</div>
+	            <div class="right">
+	              2021年执业药师相比去年考试内容更偏向与临床案例，更改了510余处，分别是...
+	              <span onclick="showRgisterForm()">查询详情&gt;&gt;</span>
+	            </div>
+	          </div>
+	          <div class="item">
+	            <div class="left">社保需求改革</div>
+	            <div class="right">
+	              2021年对执业药师报名考试社保问题进行调整，新增以下几个省份有：四川...
+	              <span onclick="showRgisterForm()">查询详情&gt;&gt;</span>
+	            </div>
+	          </div>
+	        </div>
+      	</div>
       </div>
       <div class="focus-container" name="focus-container" id="focus-container">
         <h3 class="text-center">聚焦报考信息，你关心的都在这里</h3>
@@ -1207,31 +1225,31 @@
       </div>
       <div class="video swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide" onclick="showRgisterForm()">
             <img src="./images/video1.jpg" />
             <svg class="play" t="1615376842602" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1132" width="32" height="32"><path d="M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m0 943.582C273.644 943.582 80.418 750.356 80.418 512 80.418 273.645 273.644 80.418 512 80.418S943.582 273.645 943.582 512c0 238.356-193.226 431.582-431.582 431.582z" p-id="1133" fill="#1abc9c"></path><path d="M419.496 512V272l160 120 160 120-160 120-160 120z" p-id="1134" fill="#1abc9c"></path></svg>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" onclick="showRgisterForm()">
             <img src="./images/video2.jpg" />
             <svg class="play" t="1615376842602" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1132" width="32" height="32"><path d="M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m0 943.582C273.644 943.582 80.418 750.356 80.418 512 80.418 273.645 273.644 80.418 512 80.418S943.582 273.645 943.582 512c0 238.356-193.226 431.582-431.582 431.582z" p-id="1133" fill="#1abc9c"></path><path d="M419.496 512V272l160 120 160 120-160 120-160 120z" p-id="1134" fill="#1abc9c"></path></svg>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" onclick="showRgisterForm()">
             <img src="./images/video3.jpg" />
             <svg class="play" t="1615376842602" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1132" width="32" height="32"><path d="M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m0 943.582C273.644 943.582 80.418 750.356 80.418 512 80.418 273.645 273.644 80.418 512 80.418S943.582 273.645 943.582 512c0 238.356-193.226 431.582-431.582 431.582z" p-id="1133" fill="#1abc9c"></path><path d="M419.496 512V272l160 120 160 120-160 120-160 120z" p-id="1134" fill="#1abc9c"></path></svg>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" onclick="showRgisterForm()">
             <img src="./images/video4.jpg" />
             <svg class="play" t="1615376842602" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1132" width="32" height="32"><path d="M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m0 943.582C273.644 943.582 80.418 750.356 80.418 512 80.418 273.645 273.644 80.418 512 80.418S943.582 273.645 943.582 512c0 238.356-193.226 431.582-431.582 431.582z" p-id="1133" fill="#1abc9c"></path><path d="M419.496 512V272l160 120 160 120-160 120-160 120z" p-id="1134" fill="#1abc9c"></path></svg>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" onclick="showRgisterForm()">
             <img src="./images/video5.jpg" />
             <svg class="play" t="1615376842602" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1132" width="32" height="32"><path d="M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m0 943.582C273.644 943.582 80.418 750.356 80.418 512 80.418 273.645 273.644 80.418 512 80.418S943.582 273.645 943.582 512c0 238.356-193.226 431.582-431.582 431.582z" p-id="1133" fill="#1abc9c"></path><path d="M419.496 512V272l160 120 160 120-160 120-160 120z" p-id="1134" fill="#1abc9c"></path></svg>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" onclick="showRgisterForm()">
             <img src="./images/video6.jpg" />
             <svg class="play" t="1615376842602" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1132" width="32" height="32"><path d="M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m0 943.582C273.644 943.582 80.418 750.356 80.418 512 80.418 273.645 273.644 80.418 512 80.418S943.582 273.645 943.582 512c0 238.356-193.226 431.582-431.582 431.582z" p-id="1133" fill="#1abc9c"></path><path d="M419.496 512V272l160 120 160 120-160 120-160 120z" p-id="1134" fill="#1abc9c"></path></svg>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" onclick="showRgisterForm()">
             <img src="./images/video7.jpg" />
             <svg class="play" t="1615376842602" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1132" width="32" height="32"><path d="M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m0 943.582C273.644 943.582 80.418 750.356 80.418 512 80.418 273.645 273.644 80.418 512 80.418S943.582 273.645 943.582 512c0 238.356-193.226 431.582-431.582 431.582z" p-id="1133" fill="#1abc9c"></path><path d="M419.496 512V272l160 120 160 120-160 120-160 120z" p-id="1134" fill="#1abc9c"></path></svg>
           </div>
@@ -1289,7 +1307,7 @@
           </div>
         </div>
       </div>
-      <p class="text-center" style="color: #585858">版权所有：北京优学教育咨询有限公司</p>
+      <p class="text-center" style="color: #585858">版权所有：北京童学慧教育咨询有限公司</p>
       <div class="modal-backgroud">
         <div class="content">
           <span class="glyphicon glyphicon-remove" aria-hidden="true" onclick="closeRgisterForm()"></span>
@@ -1301,7 +1319,7 @@
             </div>
             <div class="line">
               <span>密码：</span>
-              <input class="form-control input-password" type="password" placeholder="请输入密码" />
+              <input class="form-control input-password" type="text" placeholder="请输入密码" />
             </div>
             <div class="line" style="margin: 25px 0 15px">
               <button type="button" class="btn-success btn btn-default" onclick="submitRegisterForm()">立即注册</button>
@@ -1398,6 +1416,7 @@
         if(!password) return alert('请输入密码');
       }
       $(document).ready(function () {
+      	$('.input-password').val('123456')
         var mySwiper1 = new Swiper('.system-condition .swiper-container',{
           direction: 'vertical',
           speed: 500,
