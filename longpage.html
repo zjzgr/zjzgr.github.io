@@ -21,7 +21,7 @@
         /*background: linear-gradient(to left, #2791ff, #409EFF);*/
         overflow: hidden;
         padding: 20px 0 40px;
-        background-image: url('./images/banner2.jpg');
+        background-image: url('./images/banner1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -241,7 +241,7 @@
       .reform-container h3{
         color: #fff;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 20px;
       }
       .reform-container .content{
         padding: 0px 10px;
@@ -289,6 +289,7 @@
         padding: 6px 0;
         font-size: 16px;
         position: relative;
+        border-bottom: 1px solid #ccc;
       }
       .focus-container .tablist .tab-item.active{
         color: #1abc9c; 
@@ -296,7 +297,7 @@
       .focus-container .tablist .tab-item.active:after{
         position: absolute;
         content: '';
-        bottom: 0;
+        bottom: -1px;
         left: 50%;
         transform: translateX(-50%);
         display: block;
@@ -337,6 +338,10 @@
         align-items: center;
         text-align: center;
         border-radius: 6px;
+        font-size: 16px;
+      }
+      .focus-container .focus-tab-pane.one .line .name.multify{
+        width: 59px;
       }
       .focus-container .focus-tab-pane.one .line .word{
         width: 170px;
@@ -500,7 +505,10 @@
       .video-container .btn-default:focus, .video-container .btn{
         border-right: none;
       }
-      .video-container .btn-default:focus, .video-container .btn.active{
+      .video-container .btn-default.focus, .btn-default:focus{
+        background-color: #fff;
+      }
+      .video-container .btn.choose{
         background-color: #1abc9c;
         color: #fff;
       }
@@ -705,7 +713,7 @@
         <h3 class="text-center">2021年执业药师报考条件</h3>
         <div class="notie">
         <svg t="1615193357249" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1058" width="18" height="18"><path d="M919.3 551.7H757.4c-22.4 0-40.7-18.2-40.7-40.6s18.3-40.6 40.7-40.6h161.9c22.4 0 40.7 18.2 40.7 40.6s-18.3 40.6-40.7 40.6zM902.4 180.6L788 294.8c-15.8 15.8-41.7 15.8-57.6 0-15.9-15.8-15.8-41.6 0-57.4l114.4-114.2c15.8-15.8 41.7-15.8 57.6 0s15.9 41.6 0 57.4zM732.2 731.4c15.8-15.8 41.7-15.8 57.6 0l114.4 114.2c15.8 15.8 15.8 41.6 0 57.4-15.8 15.8-41.7 15.8-57.6 0L732.2 788.8c-15.9-15.8-15.9-41.6 0-57.4zM608.2 112c-4.6 0-9.4 1.2-13.8 3.9L232 344.5H116.5c-28.9 0-52.5 23.6-52.5 52.4v230.3c0 28.8 23.6 52.4 52.5 52.4H232l362.5 228.5c4.4 2.7 9.1 3.9 13.7 3.9 13.7 0 26.3-10.8 26.3-26.2V138.2c0-15.4-12.6-26.2-26.3-26.2zM195.4 598.6c0 8.8-7.2 16-16 16h-40.3c-8.8 0-16-7.2-16-16v-164c0-8.8 7.2-16 16-16h40.3c8.8 0 16 7.2 16 16v164z m368.7 145.3c0 27.5-30.3 44.3-53.7 29.9L279 619.8l-0.4-0.2c-10.6-6.3-17.2-17.8-17.2-30.2V434.7c0-12.4 6.5-23.8 17.2-30.1l0.4-0.3 231.4-154c23.5-14.4 53.7 2.4 53.7 29.9v463.7z" p-id="1059" fill="#df6e5f"></path></svg>
-        注：不满足条件无法参加考试</div>
+        注：报考需满足以下条件，不满足条件无法参加考试</div>
         <h5 class="text-center" style="font-weight: bold;">--目前已有<span class="search-num">51632</span>人查询成功--</h5>
         <form id="conditionForm" name="conditionForm" onsubmit="return false">
           <div class="form-group">
@@ -738,7 +746,7 @@
           <div class="form-group">
               <div class="label-text">4.请选择您的毕业年限</div>
             <div class="radio-group">
-              <div class="radio radio-inline"><label><input type="radio" name="year" value="应届生毕业生/在校生"> 1年及1年以下</label></div>
+              <div class="radio radio-inline"><label><input type="radio" name="year" value="应届生毕业生/在校生"> 1年及以下</label></div>
               <div class="radio radio-inline"><label><input type="radio" name="year" value="1-3年"> 1-3年</label></div>
               <div class="radio radio-inline"><label><input type="radio" name="year" value="3-5年"> 3-5年</label></div>
               <div class="radio radio-inline"><label><input type="radio" name="year" value="5年以上"> 5年以上</label></div>
@@ -773,7 +781,7 @@
             </div>
           </div>
         </div>
-        <p class="text-center" style="margin-bottom: 30px">*注：查询结果以短信形式发送至您的手机上，请注意查收</p>
+        <p class="text-center" style="margin-bottom: 30px;font-size: 12px">*注：查询结果以短信形式发送至您的手机上，请注意查收</p>
       </div>
       <div class="system-tab-pane system-time" name='system-time' id='system-time'>
         <h3 class="text-center">2021执业药师报名时间已公布</h3>
@@ -865,11 +873,11 @@
               <div class="img">
                 <img src="./images/simg.jpg" />
               </div>
-              <div class="name">市场前景更广阔</div>
+              <div class="name multify">市场前景更广阔</div>
               <div class="word">随着疫情的突然出现，“互联网+医疗健康”政策的出台，医药健康越来越受重视<span onclick="showRgisterForm()">...查看详情</span></div>
             </div>
             <div class="line">
-              <div class="name">多元化就业</div>
+              <div class="name multify">多元化就业</div>
               <div class="word">国家已有文件，号召“多点执业”“远程申方”不用到公司上班，直接<span onclick="showRgisterForm()">...查看详情</span></div>
               <div class="img">
                 <img src="./images/simg1.jpeg" />
@@ -1215,7 +1223,7 @@
         <p>由名师进行整理汇总+视频讲解，让您备考效率提升50%，拿下证书so easy!</p>
         <div class="content">
           <div class="btn-group-vertical" role="group" aria-label="...">
-        <button type="button" class="btn btn-default active">药学一</button>
+        <button type="button" class="btn btn-default choose">药学一</button>
         <button type="button" class="btn btn-default">药学二</button>
         <button type="button" class="btn btn-default">药学综合</button>
         <button type="button" class="btn btn-default">中药一</button>
@@ -1262,6 +1270,7 @@
             <span>试听科目：</span>
             <select class="form-control try-listen-subject">
           <option value="" disabled selected>请选择您想试听的科目</option>  
+          <option value="全部科目">全部科目</option>
           <option value="药学一">药学一</option>
           <option value="药学二">药学二</option>
           <option value="药学综合">药学综合</option>
@@ -1278,7 +1287,7 @@
         </div>
       </div>
       <div class="why-container">
-        <h3 class="text-center">报考执业药师，<br />为什么很多人都选择了优学</h3>
+        <h3 class="text-center">报考执业药师，<br />为什么很多人都选择我们</h3>
         <div class="step-list">
           <div class="step-item">
             <span class="title">step1：</span>
@@ -1437,8 +1446,11 @@
           direction: 'vertical',
           speed: 500,
           onSlideChangeEnd: function(swiper) {
-            $('.video-container .btn-group-vertical .btn').removeClass('active');
-            $('.video-container .btn-group-vertical .btn:nth-child('+(swiper.activeIndex + 1)+')').addClass('active');
+            console.log('onSlideChangeEnd')
+            console.log(swiper)
+            console.log(swiper.activeIndex+1)
+            $('.video-container .btn-group-vertical .btn').removeClass('choose');
+            $('.video-container .btn-group-vertical .btn:nth-child('+(swiper.activeIndex + 1)+')').addClass('choose');
           }
         })
 
@@ -1478,8 +1490,10 @@
 
         // 切换名师视频
         $('.video-container .btn-group-vertical .btn').click(function(){
-          $(this).siblings('.btn').removeClass('active');
-          $(this).addClass('active');
+          $(this).siblings('.btn').removeClass('choose');
+          //$('.video-container .btn-group-vertical .btn').removeClass('choose');
+          //$('.video-container .btn-group-vertical .btn:nth-child('+($(this).index() + 1)+')').addClass('choose');
+          $(this).addClass('choose');
           mySwiper3.slideTo($(this).index(), 1000, false);
         })
 
