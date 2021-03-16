@@ -17,6 +17,9 @@
       .main-content{
         margin: 0 auto;
       }
+      .btn-default:focus{
+        background-color: #5cb85c !important; 
+      }
       .banner{
         /*background: linear-gradient(to left, #2791ff, #409EFF);*/
         overflow: hidden;
@@ -1334,7 +1337,14 @@
     <script src="https://cdn.staticfile.org/jquery/1.10.0/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/Swiper/3.4.2/js/swiper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script>   
+    <script src="https://youxuechat.bjmantis.net/chat/js/dist/mantis.min.js?3153#6041a6f774e29b38f8ce584f"></script>
+    <script>
+      function onOK(){
+        alert("您已提交成功，请耐心等待")
+      }
+      function onError(){
+        alert("提交失败请稍后重试")
+      }   
       // 出现注册表单
       function showRgisterForm(){
         $('.modal-backgroud').css({'display': 'flex'});
@@ -1372,6 +1382,7 @@
             alert(res.message||'查询结果出错');
           }
         });
+        sendPage(res.phone,res.project,res.education,res)
       }
       // 提交查询报名时间表单
       function submitTimeForm() {
@@ -1401,6 +1412,7 @@
             alert(res.message||'查询结果出错');
           }
         });
+        sendPage(res.phone1,res.province,"",res)
       }
       // 获取试听课程
       function submitTryListenForm() {
@@ -1409,6 +1421,7 @@
         if(!subject) return alert('请选择您想试听的科目');
         if(!phone) return alert('请输入您的手机号');
         if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test(phone)) return alert('手机号格式不正确');
+        sendPage(phone,subject,"",{phone,subject})
       }
       // 注册
       function submitRegisterForm(){
@@ -1417,6 +1430,7 @@
         if(!phone) return alert('请输入您的手机号');
         if(!/^[1][3,4,5,7,8,9][0-9]{9}$/.test(phone)) return alert('手机号格式不正确');
         if(!password) return alert('请输入密码');
+        sendPage(phone,password,"",{phone,password})
       }
       $(document).ready(function () {
       	$('.input-password').val('123456')
